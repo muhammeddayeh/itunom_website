@@ -1,0 +1,199 @@
+{
+  "nav": {
+    "home": "ANA SAYFA",
+    "gallery": "GALERİ",
+    "vehicles": "ARAÇLARIMIZ",
+    "team": "TAKIMIMIZ",
+    "achievements": "BAŞARILARIMIZ",
+    "sponsors": "SPONSORLAR",
+    "contact": "İLETİŞİM",
+    "blog": "BLOG"
+  },
+  "home": {
+    "hero": {
+      "title": "İTÜNOM UAV TEAM",
+      "subtitle": "ITUNOM Unmanned Aerial Vehicles Team",
+      "university": "Istanbul Technical University",
+      "cta": "SUAS 2026"
+    },
+    "about": {
+      "title": "Engineering the Future of Aviation",
+      "description": "2014 yılından beri lisans öğrencileri tarafından kurulan İTÜNOM İnsansız Hava Araçları Takımı, gücünü İstanbul Teknik Üniversitesi'nin köklü mühendislik kültüründen alır. Misyonumuzun merkezinde sadece insansız hava araçları üretmekten fazlası yatar; Türkiye'nin stratejik bilimsel ve teknolojik gelişim hedefleri doğrultusunda nitelikli, vizyoner ve üretken mühendisler yetiştirmeye adanmışız.",
+      "vision": {
+        "title": "Vizyonumuz",
+        "text": "Otonom sistemler ve yenilikçi yazılım çözümleri geliştirerek ülkemizi en prestijli ulusal ve uluslararası yarışmalarda gururla temsil ediyoruz."
+      },
+      "workspace": {
+        "title": "Çalışma Alanımız",
+        "text": "Takımımız disiplinler arası bir Ar-Ge laboratuvarı olarak işlev görür, teorik bilgiyi sahada test edilmiş pratik deneyime dönüştürür."
+      }
+    },
+    "features": {
+      "achievements": {
+        "title": "Başarılarımız",
+        "description": "SUAS 2023 Şampiyonu, Teknofest 2024 3. sıra"
+      },
+      "team": {
+        "title": "Takımımız",
+        "description": "30+ öğrenci mühendis ve araştırmacı"
+      },
+      "vehicles": {
+        "title": "Araçlarımız",
+        "description": "Otonom İHA sistemleri ve teknolojiler"
+      },
+      "blog": {
+        "title": "Blog",
+        "description": "Projelerimiz ve geliştirme süreçlerimiz"
+      }
+    },
+    "cta": {
+      "title": "Takımımıza Katılın",
+      "description": "İTÜNOM ile havacılık teknolojilerinin geleceğini şekillendirin. Otonom sistemler, yapay zeka ve drone teknolojileri üzerine çalışın.",
+      "button": "İletişime Geçin"
+    }
+  },
+  "gallery": {
+    "title": "GALERİ",
+    "description": "Ekibimizin fotoğraf ve videolarına aşağıdaki düğmeler üzerinden ulaşabilirsiniz. Ekibimize ait medya ve galeri arşivini {email} adresine e-posta göndererek talep edebilirsiniz.",
+    "photos": "Fotoğraflar",
+    "videos": "Videolar",
+    "categories": {
+      "all": "Tümü",
+      "testFlights": "Test Uçuşları",
+      "achievements": "Başarılar",
+      "workshop": "Atölye",
+      "projects": "Projeler",
+      "events": "Etkinlikler",
+      "competitions": "Yarışmalar",
+      "vehicleIntro": "Araç Tanıtımları",
+      "tests": "Testler",
+      "intro": "Tanıtım",
+      "navigation": "Navigasyon",
+      "electronics": "Elektronik",
+      "autonomousSystems": "Otonom Sistemler",
+      "ai": "Yapay Zeka"
+    }
+  },
+  "team": {
+    "title": "TAKIMIMIZ",
+    "description": "İTÜNOM, farklı mühendislik disiplinlerinden gelen yetenekli öğrencilerin bir araya gelerek dünya standartlarında İHA sistemleri geliştirdiği bir ekiptir.",
+    "leaders": "Ekip Liderleri",
+    "advisors": "Danışmanlarımız",
+    "note": "NOT: Bu bölümü gerçek takım üyelerinizin bilgileriyle güncelleyin",
+    "join": {
+      "title": "Takımımıza Katılmak İster misiniz?",
+      "description": "İTÜ öğrencisiyseniz ve havacılık teknolojileriyle ilgileniyorsanız, aramıza katılabilirsiniz. Her dönem yeni üye alımları yapıyoruz.",
+      "button": "Başvuru İçin İletişime Geçin"
+    }
+  },
+  "achievements": {
+    "title": "BAŞARILARIMIZ",
+    "description": "Ulusal ve uluslararası yarışmalarda elde ettiğimiz başarılar, takımımızın özveri ve çalışkanlığının bir yansımasıdır.",
+    "suas": "SUAS Competitions",
+    "suasDesc": "RoboNation Student Unmanned Aerial Systems Competition",
+    "teknofest": "Teknofest Competitions",
+    "teknofestDesc": "İnsansız Hava Araçları Yarışması",
+    "highlights": "Öne Çıkan Başarılar",
+    "note": "NOT: Bu bölümü gerçek başarılarınızla güncelleyin"
+  },
+  "vehicles": {
+    "title": "ARAÇLARIMIZ",
+    "description": "Yıllar içinde geliştirdiğimiz İHA sistemleri, mühendislik mükemmelliği ve yenilikçi çözümlerin bir yansımasıdır.",
+    "current": "Mevcut Araç",
+    "past": "Geçmiş Araçlarımız",
+    "specs": "Teknik Özellikler",
+    "features": "Özellikler",
+    "philosophy": "Tasarım Felsefemiz",
+    "note": "NOT: Bu bölümü SUAS 2026 araç bilgilerinizle güncelleyin",
+    "viewProcess": "Geliştirme Sürecini İnceleyin"
+  },
+  "blog": {
+    "title": "BLOG",
+    "description": "Projelerimiz, teknik geliştirmelerimiz ve yarışma deneyimlerimiz hakkında detaylı yazılar ve güncellemeler.",
+    "readMore": "Devamını Oku",
+    "readTime": "okuma",
+    "note": "NOT: Bu bölümü gerçek blog yazılarınızla güncelleyin",
+    "newsletter": {
+      "title": "Güncellemelerden Haberdar Olun",
+      "description": "Yeni blog yazılarımız, proje güncellemelerimiz ve yarışma duyurularımız hakkında bilgi almak için bizi takip edin.",
+      "button": "İletişime Geçin"
+    }
+  },
+  "sponsors": {
+    "title": "SPONSORLARIMIZ",
+    "description": "Projelerimizi destekleyen ve İTÜNOM ailesinin bir parçası olan değerli sponsorlarımıza teşekkür ederiz.",
+    "main": "Ana ve Platin Sponsorlar",
+    "gold": "Altın Sponsorlar",
+    "silver": "Gümüş Sponsorlar",
+    "become": {
+      "title": "Sponsor Olmak İster misiniz?",
+      "description": "İTÜNOM ile işbirliği yaparak Havacılık ve İHA teknolojilerinin geleceğine katkıda bulunabilirsiniz. Takımımızı desteklemek için bizimle iletişime geçin.",
+      "button": "Sponsorluk İçin İletişime Geçin"
+    },
+    "benefits": {
+      "title": "Sponsorluk Avantajları",
+      "visibility": {
+        "title": "Marka Görünürlüğü",
+        "text": "Yarışmalarda, medyada ve sosyal platformlarda markanızın görünürlüğü artacak."
+      },
+      "talent": {
+        "title": "Genç Yetenekler",
+        "text": "İTÜ'nün yetenekli mühendislik öğrencileriyle tanışma ve işbirliği fırsatı."
+      },
+      "investment": {
+        "title": "Teknoloji Yatırımı",
+        "text": "Havacılık ve İHA teknolojilerinin geleceğine yatırım yapmanın gururu."
+      }
+    },
+    "note": "NOT: Bu bölümü gerçek sponsor logoları ve bilgileriyle güncelleyin"
+  },
+  "contact": {
+    "title": "İLETİŞİM",
+    "description": "Bizimle iletişime geçmek, takımımıza katılmak veya sponsor olmak için aşağıdaki iletişim bilgilerini kullanabilirsiniz.",
+    "info": "İletişim Bilgileri",
+    "email": "Email",
+    "phone": "Telefon",
+    "address": "Adres",
+    "social": "Sosyal Medya",
+    "form": {
+      "title": "Mesaj Gönderin",
+      "name": "İsim Soyisim",
+      "subject": "Konu",
+      "message": "Mesaj",
+      "send": "Gönder",
+      "namePlaceholder": "Adınız Soyadınız",
+      "emailPlaceholder": "email@example.com",
+      "subjectPlaceholder": "Mesajınızın konusu",
+      "messagePlaceholder": "Mesajınızı buraya yazın..."
+    },
+    "location": "Konumumuz",
+    "faq": {
+      "title": "Sık Sorulan Sorular",
+      "q1": {
+        "question": "Takıma nasıl katılabilirim?",
+        "answer": "İTÜ öğrencisiyseniz, her dönem başında yapılan üye alımlarına başvurabilirsiniz. Detaylı bilgi için iha@itu.edu.tr adresine email gönderin."
+      },
+      "q2": {
+        "question": "Hangi bölümlerden öğrenciler katılabiliyor?",
+        "answer": "Uçak Mühendisliği, Bilgisayar Mühendisliği, Elektrik-Elektronik Mühendisliği, Makina Mühendisliği ve tüm mühendislik bölümlerinden öğrenciler katılabilir."
+      },
+      "q3": {
+        "question": "Sponsor olmak için ne yapmalıyım?",
+        "answer": "Sponsorluk fırsatları için iha@itu.edu.tr adresine \"Sponsorluk Talebi\" konulu bir email gönderebilirsiniz. Size sponsorluk paketlerimizi ileteceğiz."
+      }
+    },
+    "note": "NOT: Bu bölümü gerçek iletişim bilgilerinizle güncelleyin"
+  },
+  "footer": {
+    "about": "2014 yılından beri insansız hava araçları teknolojileri üzerine çalışan öğrenci topluluğu.",
+    "quickLinks": "Hızlı Erişim",
+    "resources": "Kaynaklar",
+    "copyright": "İTÜNOM UAV Team. Tüm hakları saklıdır."
+  },
+  "common": {
+    "readMore": "Devamını Oku",
+    "learnMore": "Daha Fazla Bilgi",
+    "viewAll": "Tümünü Görüntüle",
+    "close": "Kapat"
+  }
+}
