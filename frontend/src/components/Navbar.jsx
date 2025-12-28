@@ -24,7 +24,7 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2">
-            <span className="text-2xl font-bold text-white tracking-wider">ITÜNOM</span>
+            <span className="text-2xl font-bold text-white tracking-wider">ITUNOM</span>
           </Link>
 
           {/* Desktop Navigation */}
