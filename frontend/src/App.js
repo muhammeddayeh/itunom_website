@@ -5,6 +5,13 @@ import Navbar from "./components/Navbar";
 import GalleryHero from "./components/GalleryHero";
 import PhotoGallery from "./components/PhotoGallery";
 import VideoGallery from "./components/VideoGallery";
+import HomePage from "./pages/HomePage";
+import TeamPage from "./pages/TeamPage";
+import AchievementsPage from "./pages/AchievementsPage";
+import VehiclesPage from "./pages/VehiclesPage";
+import BlogPage from "./pages/BlogPage";
+import SponsorsPage from "./pages/SponsorsPage";
+import ContactPage from "./pages/ContactPage";
 
 const GalleryPage = () => {
   const [activeTab, setActiveTab] = useState('photos');
@@ -20,27 +27,20 @@ const GalleryPage = () => {
   );
 };
 
-const Home = () => {
-  return (
-    <div className="min-h-screen bg-black">
-      <Navbar />
-      <div className="pt-16 flex items-center justify-center min-h-screen">
-        <div className="text-center">
-          <h1 className="text-6xl font-bold text-white mb-4">İTÜNOM UAV TEAM</h1>
-          <p className="text-xl text-gray-400">Galeri sayfasını görmek için menüden GALERİ'ye tıklayın</p>
-        </div>
-      </div>
-    </div>
-  );
-};
-
 function App() {
   return (
     <div className="App">
       <BrowserRouter>
+        <Navbar />
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<HomePage />} />
           <Route path="/galeri" element={<GalleryPage />} />
+          <Route path="/araclar" element={<VehiclesPage />} />
+          <Route path="/takim" element={<TeamPage />} />
+          <Route path="/basarilar" element={<AchievementsPage />} />
+          <Route path="/blog" element={<BlogPage />} />
+          <Route path="/sponsorlar" element={<SponsorsPage />} />
+          <Route path="/iletisim" element={<ContactPage />} />
         </Routes>
       </BrowserRouter>
     </div>
