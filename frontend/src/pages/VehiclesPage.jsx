@@ -8,6 +8,7 @@ const VehiclesPage = () => {
   // TODO: Update this section with your real vehicles' information
   const currentVehicle = {
     name: 'VIBE',
+    slug: 'vibe',
     year: '2025',
     competition: 'RoboNation SUAS 2025',
     description: t('vehicles.description'),
@@ -21,18 +22,19 @@ const VehiclesPage = () => {
       { icon: <Cpu size={20} />, label: 'Processor', value: 'Jetson Orin Nano' }
     ],
     features: [
-      'Fully autonomous flight control system',
-      'Advanced object detection and recognition (YOLOv8)',
-      'GPS and visual odometry hybrid navigation',
-      'Real-time telemetry system',
-      'Automatic takeoff and landing',
-      'Multiple failsafe mechanisms'
+      'vehicles.featuresItems.f1',
+      'vehicles.featuresItems.f2',
+      'vehicles.featuresItems.f3',
+      'vehicles.featuresItems.f4',
+      'vehicles.featuresItems.f5',
+      'vehicles.featuresItems.f6'
     ]
   };
 
   const pastVehicles = [
     {
       name: 'DİŞSİZ',
+      slug: 'dissiz',
       year: '2024',
       competition: 'Teknofest Combat UAV',
       image: '/photos/vehicles/dissizkucuk.jpg',
@@ -40,6 +42,7 @@ const VehiclesPage = () => {
     },
     {
       name: 'ŞİMŞEK',
+      slug: 'simsek',
       year: '2023',
       competition: 'RoboNation SUAS 2024',
       image: '/photos/vehicles/simseknew.jpg',
@@ -47,6 +50,7 @@ const VehiclesPage = () => {
     },
     {
       name: 'TOSUN',
+      slug: 'tosun',
       year: '2022',
       competition: 'AUVSI SUAS 2022',
       image: '/photos/vehicles/tosunson.jpg',
@@ -54,6 +58,7 @@ const VehiclesPage = () => {
     },
     {
       name: 'KV-55',
+      slug: 'kv-55',
       year: '2021',
       competition: 'Teknofest 2021',
       image: '/photos/vehicles/kv55website.png  ',
@@ -61,6 +66,7 @@ const VehiclesPage = () => {
     },
     {
       name: 'BLACKSPARROW',
+      slug: 'blacksparrow',
       year: '2020',
       competition: 'SUAS 2020',
       image: '/photos/vehicles/blacksparrowwebsite.png',
@@ -68,6 +74,7 @@ const VehiclesPage = () => {
     },
     {
       name: 'GOLDENHORN',
+      slug: 'goldenhorn',
       year: '2018',
       competition: 'AUVSI SUAS 2018',
       image: '/photos/vehicles/goldenhornwebsite.png',
@@ -75,6 +82,7 @@ const VehiclesPage = () => {
     },
     {
       name: 'LODOS',
+      slug: 'lodos',
       year: '2017',
       competition: 'AUVSI SUAS 2017',
       image: '/photos/vehicles/lodoswebsite.png',
@@ -147,7 +155,7 @@ const VehiclesPage = () => {
                   {currentVehicle.features.map((feature, index) => (
                     <li key={index} className="flex items-start space-x-2 text-gray-300">
                       <span className="text-red-500 mt-1">•</span>
-                      <span>{feature}</span>
+                      <span>{t(feature)}</span>
                     </li>
                   ))}
                 </ul>
@@ -157,7 +165,7 @@ const VehiclesPage = () => {
 
           <div className="text-center">
             <Link
-              to="/blog"
+              to={`/araclar/${currentVehicle.slug}`}
               className="inline-flex items-center space-x-2 px-8 py-4 bg-red-600 text-white font-semibold rounded-lg hover:bg-red-700 transition-all duration-300 shadow-lg shadow-red-500/50"
             >
               <span>{t('vehicles.viewProcess')}</span>
@@ -197,9 +205,12 @@ const VehiclesPage = () => {
                 <div className="p-6">
                   <p className="text-gray-400 text-sm mb-3">{vehicle.competition}</p>
                   <p className="text-gray-300 text-sm">{vehicle.description}</p>
-                  <button className="mt-4 inline-flex items-center text-red-500 hover:text-red-400 transition-colors font-semibold text-sm">
+                  <Link 
+                    to={`/araclar/${vehicle.slug}`}
+                    className="mt-4 inline-flex items-center text-red-500 hover:text-red-400 transition-colors font-semibold text-sm"
+                  >
                     {t('vehicles.viewProcess')} <ArrowRight size={16} className="ml-2" />
-                  </button>
+                  </Link>
                 </div>
               </div>
             ))}

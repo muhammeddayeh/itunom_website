@@ -5,7 +5,7 @@ import { useTranslation } from 'react-i18next';
 const TeamPage = () => {
   const { t } = useTranslation();
   // TODO: Fill this section with your real team members
-  const teamMembers = [
+  const teamLeaders = [
     {
       name: 'Burak  Emir Cengiz',
       role: 'Team Captain',
@@ -43,6 +43,130 @@ const TeamPage = () => {
     }
   ];
 
+  const teamMembers = [
+    {
+      name: 'Ömer Faruk Paşaoğlu',
+      role: 'Mechanical Team Member',
+      image: '/photos/team/',
+      email: 'pasaogluo23@itu.edu.tr',
+      linkedin: '#'
+    },
+    {
+      name: 'Muhammed Yusuf Zaloğlu',
+      role: 'Mechanical Team Member',
+      image: '/photos/team/',
+      email: 'zaloglu24@itu.edu.tr',
+      linkedin: '#'
+    },
+    {
+      name: 'Ferit Musa Öz',
+      role: 'Mechanical Team Member',
+      image: '/photos/team/',
+      email: 'ozfe25@itu.edu.tr',
+      linkedin: '#'
+    },
+    {
+      name: 'Furkan Demiryürek',
+      role: 'Mechanical Team Member',
+      image: '/photos/team/',
+      email: 'demiryurek24@itu.edu.tr',
+      linkedin: '#'
+    },
+    {
+      name: 'Ziya Yaman',
+      role: 'Mechanical Team Member',
+      image: '/photos/team/',
+      email: 'yamanz25@itu.edu.tr',
+      linkedin: '#'
+    },
+    {
+      name: 'Merve Yiğit',
+      role: 'Mechanical Team Member',
+      image: '/photos/team/',
+      email: 'yigitm25@itu.edu.tr',
+      linkedin: '#'
+    },
+    {
+      name: 'Emine Bahar Ercan',
+      role: 'Promotion & Sponsorship Team Member',
+      image: '/photos/team/',
+      email: 'ercane23@itu.edu.tr',
+      linkedin: '#'
+    },
+    {
+      name: 'Pınar Başman',
+      role: 'Software Team Member',
+      image: '/photos/team/',
+      email: 'basman24@itu.edu.tr',
+      linkedin: '#'
+    },
+    {
+      name: 'Elif Rumeysa Atılgan',
+      role: 'Software Team Member',
+      image: '/photos/team/',
+      email: 'atilgane24@itu.edu.tr',
+      linkedin: '#'
+    },
+    {
+      name: 'Emir Taha Demir',
+      role: 'Software Team Member',
+      image: '/photos/team/',
+      email: 'demirem24@itu.edu.tr',
+      linkedin: '#'
+    },
+    {
+      name: 'Muhammed Dayeh',
+      role: 'Software Team Member',
+      image: '/photos/team/',
+      email: 'dayeh24@itu.edu.tr',
+      linkedin: 'https://www.linkedin.com/in/muhammed-dayeh/'
+    },
+    {
+      name: 'Fuad Yusifov',
+      role: 'Avionics Team Member',
+      image: '/photos/team/',
+      email: 'yusifov24@itu.edu.tr',
+      linkedin: '#'
+    },
+    {
+      name: 'Serkan Alakaş',
+      role: 'Avionics Team Member',
+      image: '/photos/team/',
+      email: 'alakas25@itu.edu.tr',
+      linkedin: '#'
+    },
+    {
+      name: 'Veysel Efe Dinç',
+      role: 'Avionics Team Member',
+      image: '/photos/team/',
+      email: 'dincv24@itu.edu.tr',
+      linkedin: '#'
+    },
+    {
+      name: 'Arda Turan',
+      role: 'Avionics Team Member',
+      image: '/photos/team/',
+      email: 'turana25@itu.edu.tr',
+      linkedin: '#'
+    },
+    {
+      name: 'Emre Yusuf Yentür',
+      role: 'Avionics Team Member',
+      image: '/photos/team/',
+      email: 'yentur24@itu.edu.tr',
+      linkedin: '#'
+    },
+    {
+      name: 'Tarık Ziya İnci',
+      role: 'Avionics Team Member',
+      image: '/photos/team/',
+      email: 'incit22@itu.edu.tr',
+      linkedin: '#'
+    }
+
+    
+  ];
+
   const advisors = [
     {
       name: 'Prof. Dr. Emre Koyuncu',
@@ -67,11 +191,63 @@ const TeamPage = () => {
         </div>
       </section>
 
-      {/* Team Members Section */}
+      {/* Team Leaders Section */}
       <section className="py-20 px-4 bg-gradient-to-b from-black to-gray-900">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-4xl font-bold text-white text-center mb-4">
             {t('team.leaders')}
+          </h2>
+         <div></div>
+          
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {teamLeaders.map((member, index) => (
+              <div
+                key={index}
+                className="group bg-gray-800/30 rounded-lg overflow-hidden border border-gray-700 hover:border-red-600 transition-all duration-300 hover:scale-105"
+              >
+                <div className="relative overflow-hidden">
+                  <img
+                    src={member.image}
+                    alt={member.name}
+                    className="w-full h-72 object-cover group-hover:scale-110 transition-transform duration-500"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
+                </div>
+                
+                <div className="p-6">
+                  <h3 className="text-xl font-bold text-white mb-1">{member.name}</h3>
+                  <p className="text-red-500 font-semibold mb-2">{member.role}</p>
+                  <p className="text-gray-400 text-sm mb-4">{member.department}</p>
+                  
+                  <div className="flex space-x-3">
+                    <a
+                      href={`mailto:${member.email}`}
+                      className="p-2 bg-gray-700 hover:bg-red-600 text-white rounded-lg transition-colors"
+                      title="Email"
+                    >
+                      <Mail size={18} />
+                    </a>
+                    <a
+                      href={member.linkedin}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="p-2 bg-gray-700 hover:bg-red-600 text-white rounded-lg transition-colors"
+                      title="LinkedIn"
+                    >
+                      <Linkedin size={18} />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+      {/* Team Members Section */}
+      <section className="py-20 px-4 bg-gradient-to-b from-black to-gray-900">
+        <div className="max-w-7xl mx-auto">
+          <h2 className="text-4xl font-bold text-white text-center mb-4">
+            {t('team.members')}
           </h2>
          <div></div>
           
@@ -127,7 +303,7 @@ const TeamPage = () => {
             {t('team.advisors')}
           </h2>
           
-          <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+          <div className="grid md:grid-cols-1 gap-8 max-w-4xl mx-auto">
             {advisors.map((advisor, index) => (
               <div
                 key={index}

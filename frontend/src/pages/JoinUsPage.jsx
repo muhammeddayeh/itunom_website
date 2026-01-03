@@ -9,22 +9,27 @@ const JoinUsPage = () => {
     {
       icon: <Code size={32} className="text-red-500" />,
       title: t('joinUs.departments.software.title'),
-      description: t('joinUs.departments.software.desc')
+      description: t('joinUs.departments.software.desc'),
+      link: "https://docs.google.com/forms/d/e/1FAIpQLSf8Cp-ew7qwDo8GqG-4xF9qieEDGor8yOYrWfXCgiF3CPRA8Q/viewform?embedded=true"
     },
     {
       icon: <Wrench size={32} className="text-red-500" />,
       title: t('joinUs.departments.mechanical.title'),
-      description: t('joinUs.departments.mechanical.desc')
+      description: t('joinUs.departments.mechanical.desc'),
+      link: "https://docs.google.com/forms/d/e/1FAIpQLSepVbk-hHlpLR581LpLo-EmAieIJstj3LUGLJ6Jor5qgg2rkQ/viewform?embedded=true"
+
     },
     {
       icon: <Brain size={32} className="text-red-500" />,
       title: t('joinUs.departments.promotion.title'),
-      description: t('joinUs.departments.promotion.desc')
+      description: t('joinUs.departments.promotion.desc'),
+      link: "https://docs.google.com/forms/d/e/1FAIpQLSd9FRLS6N9U3EL1V0d6ACeGQeHe-Mwi5NPjV3qQu2Gv4XAeLQ/viewform?embedded=true"
     },
     {
       icon: <Rocket size={32} className="text-red-500" />,
       title: t('joinUs.departments.avionics.title'),
-      description: t('joinUs.departments.avionics.desc')
+      description: t('joinUs.departments.avionics.desc'),
+      link: "https://docs.google.com/forms/d/e/1FAIpQLScP5tA1wUL4vQRtxvDfKhMu3mpHyaUCRfcz8T-KgBoO9cxBsA/viewform?embedded=true"
     }
   ];
 
@@ -65,33 +70,44 @@ const JoinUsPage = () => {
         </div>
       </section>
 
-      {/* Application Process */}
+      {/* Application Process - Multiple Boxes */}
       <section className="py-16 px-4 bg-gray-900/50">
-        <div className="max-w-4xl mx-auto text-center">
-          <Users size={48} className="text-red-500 mx-auto mb-6" />
-          <h2 className="text-3xl font-bold text-white mb-6">
-            {t('joinUs.process.title')}
-          </h2>
-          <p className="text-gray-300 text-lg mb-8 leading-relaxed">
-            {t('joinUs.process.description')}
-          </p>
-          
-          <div className="bg-black/50 p-8 rounded-2xl border border-gray-800 max-w-2xl mx-auto">
-            <h3 className="text-xl font-semibold text-white mb-4 flex items-center justify-center gap-2">
-              <Send size={20} className="text-red-500" />
-              {t('joinUs.apply.title')}
-            </h3>
-            <p className="text-gray-400 mb-6">
-              {t('joinUs.apply.text')}
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-12">
+            <Users size={48} className="text-red-500 mx-auto mb-6" />
+            <h2 className="text-3xl font-bold text-white mb-6">
+              {t('joinUs.process.title')}
+            </h2>
+            <p className="text-gray-300 text-lg mb-8 leading-relaxed">
+              {t('joinUs.process.description')}
             </p>
-            <a 
-              href="https://forms.google.com" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="inline-block bg-red-600 text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-red-700 transition-all duration-300 shadow-lg shadow-red-600/20 hover:shadow-red-600/40"
-            >
-              {t('joinUs.apply.button')}
-            </a>
+          </div>
+          
+          <div className="grid md:grid-cols-2 gap-6 max-w-6xl mx-auto">
+            {departments.map((dept, index) => (
+              <div key={index} className="bg-black/50 p-8 rounded-2xl border border-gray-800 hover:border-red-500/50 transition-all duration-300">
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="p-2 bg-gray-900 rounded-lg">
+                    {dept.icon}
+                  </div>
+                  <h3 className="text-xl font-semibold text-white">
+                    {dept.title}
+                  </h3>
+                </div>
+                <p className="text-gray-400 mb-6">
+                  {t('joinUs.apply.text')}
+                </p>
+                <a 
+                  href={dept.link}
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 bg-red-600 text-white px-6 py-3 rounded-lg font-bold hover:bg-red-700 transition-all duration-300 shadow-lg shadow-red-600/20 hover:shadow-red-600/40"
+                >
+                  <Send size={18} />
+                  {t('joinUs.apply.button')}
+                </a>
+              </div>
+            ))}
           </div>
         </div>
       </section>

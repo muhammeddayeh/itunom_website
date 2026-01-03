@@ -99,6 +99,7 @@
     "title": "TAKIMIMIZ",
     "description": "İTÜNOM, farklı mühendislik disiplinlerinden gelen yetenekli öğrencilerin bir araya gelerek dünya standartlarında İHA sistemleri geliştirdiği bir ekiptir.",
     "leaders": "Ekip Liderleri",
+    "members": "Ekip Üyeleri",
     "advisors": "Danışmanımız",
     "note": "NOT: Bu bölümü gerçek takım üyelerinizin bilgileriyle güncelleyin",
     "join": {
@@ -135,6 +136,14 @@
     "specs": "Teknik Özellikler",
     "features": "Özellikler",
     "philosophy": "Tasarım Felsefemiz",
+    "featuresItems":{
+      "f1": "Tam otonom uçuş kontrol sistemi",
+      "f2": "Gelişmiş nesne tespiti ve tanıma (YOLOv8)",
+      "f3": "GPS ve görsel odometri tabanlı hibrit navigasyon",
+      "f4": "Gerçek zamanlı telemetri sistemi",
+      "f5": "Otomatik kalkış ve iniş",
+      "f6": "Çoklu hata emniyet (failsafe) mekanizmaları"
+    },
     "philosophyItems": {
       "autonomous": {
         "title": "Otonom Sistemler",
@@ -178,13 +187,24 @@
   "sponsors": {
     "title": "SPONSORLARIMIZ",
     "description": "Projelerimizi destekleyen ve İTÜNOM ailesinin bir parçası olan değerli sponsorlarımıza teşekkür ederiz.",
-    "main": "Ana ve Platin Sponsorlar",
+    "main": "Ana Sponsorlar",
     "gold": "Altın Sponsorlar",
     "silver": "Gümüş Sponsorlar",
     "become": {
       "title": "Sponsor Olmak İster misiniz?",
       "description": "İTÜNOM ile işbirliği yaparak Havacılık ve İHA teknolojilerinin geleceğine katkıda bulunabilirsiniz. Takımımızı desteklemek için bizimle iletişime geçin.",
       "button": "Sponsorluk İçin İletişime Geçin"
+    },
+    "list": {
+      "turkishTechnic": "Teknik destek ve malzeme tedarik ana sponsoru",
+      "mke": "Elektronik sistemler ve teknoloji sponsoru",
+      "tubitak": "Ar-Ge ve bilimsel araştırma desteği",
+      "halkbank": "Finansal hizmetler ve proje finansmanı desteği",
+      "aselsan": "Savunma sistemleri ve ileri elektronik teknolojileri sponsoru",
+      "arzPortfoy": "Yatırım yönetimi ve portföy danışmanlığı sponsoru",
+      "egeBant": "Endüstriyel bant ve yüzey işlem malzemeleri tedarikçisi",
+      "koyuncu": "Lojistik ve endüstriyel enerji çözümleri desteği",
+      "itu": "Akademik iş birliği ve mühendislik uzmanlığı desteği"
     },
     "benefits": {
       "title": "Sponsorluk Avantajları",
@@ -282,7 +302,7 @@
     "phone": "Telefon",
     "address": "Adres",
     "addressText": "İTÜ Ayazağa Kampüsü\n34469 Maslak, İstanbul",
-    "copyright": "© {year} İTÜNOM İHA Takımı. Tüm hakları saklıdır.",
+    "copyright": "© {{year}} İTÜNOM İHA Takımı. Tüm hakları saklıdır.",
     "social": "Sosyal Medya"
   },
   "common": {

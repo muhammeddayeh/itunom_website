@@ -8,34 +8,60 @@ const SponsorsPage = () => {
     {
       name: 'Turkish Technic',
       logo: '/photos/sponsors/1.png',
-      tier: 'Platinum Sponsor',
-      description: 'Technical support and material provider main sponsor'
+      tier: '',
+      descriptionKey: 'sponsors.list.turkishTechnic'
     },
     {
       name: 'MKE',
       logo: '/photos/sponsors/mke.png',
-      tier: 'Platinum Sponsor',
-      description: 'Electronics systems and technology sponsor'
+      tier: '',
+      descriptionKey: 'sponsors.list.mke'
     },
     {
       name: 'TÜBİTAK',
       logo: '/photos/sponsors/tubitak.png',
-      tier: 'Platinum Sponsor',
-      description: 'R&D and scientific research support'
+      tier: '',
+      descriptionKey: 'sponsors.list.tubitak'
+    },
+    { 
+      name: 'Halkbank', 
+      logo: '/photos/sponsors/halkbank.png',
+      tier: '',
+      descriptionKey: 'sponsors.list.halkbank'
+    },
+    { 
+      name: 'ASELSAN', 
+      logo: '/photos/sponsors/aselsann.png',
+      tier: '',
+      descriptionKey: 'sponsors.list.aselsan'
+    },
+    { 
+      name: 'Arz Portföy', 
+      logo: '/photos/sponsors/arz.png',
+      tier: '',
+      descriptionKey: 'sponsors.list.arzPortfoy'
+    },
+    { 
+      name: 'Ege Bant', 
+      logo: '/photos/sponsors/ege_bant.png',
+      tier: '',
+      descriptionKey: 'sponsors.list.egeBant'
+    },
+    { 
+      name: 'Koyuncu', 
+      logo: '/photos/sponsors/2.png',
+      tier: '',
+      descriptionKey: 'sponsors.list.koyuncu'
+    },
+    { 
+      name: 'İTÜ', 
+      logo: '/photos/sponsors/itu.png',
+      tier: '',
+      descriptionKey: 'sponsors.list.itu'
     }
   ];
 
-  const goldSponsors = [
-    { name: 'Halkbank', logo: '/photos/sponsors/halkbank.png' },
-    { name: 'ASELSAN', logo: '/photos/sponsors/aselsann.png' },
-    { name: 'Arz Portföy', logo: '/photos/sponsors/arz.png' }
-  ];
 
-  const silverSponsors = [
-    { name: 'Ege Bant', logo: '/photos/sponsors/ege_bant.png' },
-    { name: 'Koyuncu', logo: '/photos/sponsors/2.png' },
-    { name: 'İTÜ', logo: '/photos/sponsors/itu.png' }
-  ];
 
   return (
     <div className="min-h-screen bg-black pt-16">
@@ -80,7 +106,7 @@ const SponsorsPage = () => {
                     {sponsor.tier}
                   </span>
                   <h3 className="text-xl font-bold text-gray-900 mb-2">{sponsor.name}</h3>
-                  <p className="text-gray-600 text-sm">{sponsor.description}</p>
+                  <p className="text-gray-600 text-sm">{t(sponsor.descriptionKey)}</p>
                 </div>
               </div>
             ))}
@@ -88,57 +114,7 @@ const SponsorsPage = () => {
         </div>
       </section>
 
-      {/* Gold Sponsors Section */}
-      <section className="py-20 px-4 bg-gradient-to-b from-gray-900 to-black">
-        <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl font-bold text-white text-center mb-12">
-            {t('sponsors.gold')}
-          </h2>
-
-          <div className="grid md:grid-cols-3 gap-8">
-            {goldSponsors.map((sponsor, index) => (
-              <div
-                key={index}
-                className="group bg-white/95 rounded-lg p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
-              >
-                <div className="flex items-center justify-center h-24">
-                  <img
-                    src={sponsor.logo}
-                    alt={sponsor.name}
-                    className="max-h-full max-w-full object-contain"
-                  />
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Silver Sponsors Section */}
-      <section className="py-20 px-4 bg-gradient-to-b from-black to-gray-900">
-        <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl font-bold text-white text-center mb-12">
-            {t('sponsors.silver')}
-          </h2>
-
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-            {silverSponsors.map((sponsor, index) => (
-              <div
-                key={index}
-                className="group bg-white/90 rounded-lg p-4 shadow-md hover:shadow-lg transition-all duration-300 hover:scale-105"
-              >
-                <div className="flex items-center justify-center h-20">
-                  <img
-                    src={sponsor.logo}
-                    alt={sponsor.name}
-                    className="max-h-full max-w-full object-contain"
-                  />
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+      
 
       {/* Become a Sponsor Section */}
       <section className="py-20 px-4 bg-gradient-to-b from-gray-900 to-black">

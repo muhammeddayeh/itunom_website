@@ -99,6 +99,7 @@
     "title": "OUR TEAM",
     "description": "ITUNOM is a team where talented students from different engineering disciplines come together to develop world-class UAV systems.",
     "leaders": "Team Leaders",
+    "members": "Team Members",
     "advisors": "Our Advisor",
     "note": "NOTE: Update this section with your actual team members' information",
     "join": {
@@ -135,6 +136,14 @@
     "specs": "Technical Specifications",
     "features": "Features",
     "philosophy": "Design Philosophy",
+    "featuresItems":{
+      "f1": "Fully autonomous flight control system",
+      "f2": "Advanced object detection and recognition (YOLOv8)",
+      "f3": "GPS and visual odometry hybrid navigation",
+      "f4": "Real-time telemetry system",
+      "f5": "Automatic takeoff and landing",
+      "f6": "Multiple failsafe mechanisms"
+    },
     "philosophyItems": {
       "autonomous": {
         "title": "Autonomous Systems",
@@ -178,13 +187,24 @@
   "sponsors": {
     "title": "OUR SPONSORS",
     "description": "We thank our valuable sponsors who support our projects and are part of the ITUNOM family.",
-    "main": "Main and Platinum Sponsors",
+    "main": "Main Sponsors",
     "gold": "Gold Sponsors",
     "silver": "Silver Sponsors",
     "become": {
       "title": "Want to Become a Sponsor?",
       "description": "By collaborating with ITUNOM, you can contribute to the future of Aviation and UAV technologies. Contact us to support our team.",
       "button": "Contact for Sponsorship"
+    },
+    "list": {
+      "turkishTechnic": "Technical support and material provider main sponsor",
+      "mke": "Electronic systems and technology sponsor",
+      "tubitak": "R&D and scientific research support",
+      "halkbank": "Financial services and project funding support",
+      "aselsan": "Defense systems and advanced electronics technology sponsor",
+      "arzPortfoy": "Investment management and portfolio consulting sponsor",
+      "egeBant": "Industrial adhesives and surface processing material provider",
+      "koyuncu": "Logistics and industrial energy solutions support",
+      "itu": "Academic partnership and engineering expertise support"
     },
     "benefits": {
       "title": "Sponsorship Benefits",
@@ -282,7 +302,7 @@
     "phone": "Phone",
     "address": "Address",
     "addressText": "ITU Ayazağa Campus\n34469 Maslak, Istanbul",
-    "copyright": "© {year} ITUNOM UAV Team. All rights reserved.",
+    "copyright": "© {{year}} ITUNOM UAV Team. All rights reserved.",
     "social": "Social Media"
   },
   "common": {

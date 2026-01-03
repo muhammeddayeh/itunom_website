@@ -1,19 +1,31 @@
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X, Search } from 'lucide-react';
+import { Menu, X, Search, ChevronDown } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 import { SearchCommand } from './SearchCommand';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [searchOpen, setSearchOpen] = useState(false);
+  const [vehiclesOpen, setVehiclesOpen] = useState(false);
   const location = useLocation();
   const { t, i18n } = useTranslation();
+
+  const vehicles = [
+    { name: 'VIBE', slug: 'vibe', year: '2025' },
+    { name: 'DİŞSİZ', slug: 'dissiz', year: '2024' },
+    { name: 'ŞİMŞEK', slug: 'simsek', year: '2023' },
+    { name: 'TOSUN', slug: 'tosun', year: '2022' },
+    { name: 'KV-55', slug: 'kv-55', year: '2021' },
+    { name: 'BLACKSPARROW', slug: 'blacksparrow', year: '2020' },
+    { name: 'GOLDENHORN', slug: 'goldenhorn', year: '2018' },
+    { name: 'LODOS', slug: 'lodos', year: '2017' }
+  ];
 
   const navItems = [
     { name: t('nav.home'), path: '/' },
     { name: t('nav.blog'), path: '/blog' },
-    { name: t('nav.vehicles'), path: '/araclar' },
+    { name: t('nav.vehicles'), path: '/araclar', hasDropdown: true },
     { name: t('nav.team'), path: '/takim' },
     { name: t('nav.achievements'), path: '/basarilar' },
     { name: t('nav.sponsors'), path: '/sponsorlar' },
@@ -21,7 +33,7 @@ const Navbar = () => {
     { name: t('nav.join_us'), path: '/join-us' }
   ];
 
-  const isActive = (path) => location.pathname === path;
+  const isActive = (path) => location.pathname === path || location.pathname.startsWith(path + '/');
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-black/90 backdrop-blur-sm border-b border-gray-800">
@@ -35,15 +47,57 @@ const Navbar = () => {
           {/* Desktop Navigation */}
           <div className="hidden lg:flex items-center space-x-8">
             {navItems.map((item) => (
-              <Link
-                key={item.path}
-                to={item.path}
-                className={`text-sm font-medium transition-colors duration-200 hover:text-bordo-500 ${
-                  isActive(item.path) ? 'text-bordo-500' : 'text-white'
-                }`}
-              >
-                {item.name}
-              </Link>
+              item.hasDropdown ? (
+                <div 
+                  key={item.path}
+                  className="relative group"
+                  onMouseEnter={() => setVehiclesOpen(true)}
+                  onMouseLeave={() => setVehiclesOpen(false)}
+                >
+                  <Link
+                    to={item.path}
+                    className={`flex items-center space-x-1 text-sm font-medium transition-colors duration-200 hover:text-bordo-500 ${
+                      isActive(item.path) ? 'text-bordo-500' : 'text-white'
+                    }`}
+                  >
+                    <span>{item.name}</span>
+                    <ChevronDown size={16} className={`transition-transform duration-200 ${vehiclesOpen ? 'rotate-180' : ''}`} />
+                  </Link>
+
+                  {/* Dropdown Menu */}
+                  {vehiclesOpen && (
+                    <div className="absolute top-full left-0 pt-2 w-64">
+                      <div className="bg-gray-900 border border-gray-800 rounded-lg shadow-2xl overflow-hidden">
+                      <div className="py-2">
+                        
+                        {vehicles.map((vehicle) => (
+                          <Link
+                            key={vehicle.slug}
+                            to={`/araclar/${vehicle.slug}`}
+                            className="block px-4 py-3 text-sm text-gray-300 hover:bg-gray-800 hover:text-bordo-500 transition-colors"
+                          >
+                            <div className="flex items-center justify-between">
+                              <span className="font-medium">{vehicle.name}</span>
+                              <span className="text-xs text-gray-500">{vehicle.year}</span>
+                            </div>
+                          </Link>
+                        ))}
+                      </div>
+                    </div>
+                  </div>
+                  )}
+                </div>
+              ) : (
+                <Link
+                  key={item.path}
+                  to={item.path}
+                  className={`text-sm font-medium transition-colors duration-200 hover:text-bordo-500 ${
+                    isActive(item.path) ? 'text-bordo-500' : 'text-white'
+                  }`}
+                >
+                  {item.name}
+                </Link>
+              )
             ))}
           </div>
 
@@ -100,16 +154,54 @@ const Navbar = () => {
         <div className="lg:hidden bg-black/95 border-t border-gray-800">
           <div className="px-4 py-4 space-y-3">
             {navItems.map((item) => (
-              <Link
-                key={item.path}
-                to={item.path}
-                onClick={() => setIsOpen(false)}
-                className={`block py-2 text-sm font-medium transition-colors duration-200 ${
-                  isActive(item.path) ? 'text-bordo-500' : 'text-white hover:text-bordo-500'
-                }`}
-              >
-                {item.name}
-              </Link>
+              item.hasDropdown ? (
+                <div key={item.path}>
+                  <button
+                    onClick={() => setVehiclesOpen(!vehiclesOpen)}
+                    className={`flex items-center justify-between w-full py-2 text-sm font-medium transition-colors duration-200 ${
+                      isActive(item.path) ? 'text-bordo-500' : 'text-white hover:text-bordo-500'
+                    }`}
+                  >
+                    <span>{item.name}</span>
+                    <ChevronDown size={16} className={`transition-transform duration-200 ${vehiclesOpen ? 'rotate-180' : ''}`} />
+                  </button>
+                  {vehiclesOpen && (
+                    <div className="ml-4 mt-2 space-y-2 border-l-2 border-gray-800 pl-4">
+                      <Link
+                        to="/araclar"
+                        onClick={() => setIsOpen(false)}
+                        className="block py-2 text-sm text-gray-300 hover:text-bordo-500 transition-colors"
+                      >
+                        All Vehicles
+                      </Link>
+                      {vehicles.map((vehicle) => (
+                        <Link
+                          key={vehicle.slug}
+                          to={`/araclar/${vehicle.slug}`}
+                          onClick={() => setIsOpen(false)}
+                          className="block py-2 text-sm text-gray-300 hover:text-bordo-500 transition-colors"
+                        >
+                          <div className="flex items-center justify-between">
+                            <span>{vehicle.name}</span>
+                            <span className="text-xs text-gray-500">{vehicle.year}</span>
+                          </div>
+                        </Link>
+                      ))}
+                    </div>
+                  )}
+                </div>
+              ) : (
+                <Link
+                  key={item.path}
+                  to={item.path}
+                  onClick={() => setIsOpen(false)}
+                  className={`block py-2 text-sm font-medium transition-colors duration-200 ${
+                    isActive(item.path) ? 'text-bordo-500' : 'text-white hover:text-bordo-500'
+                  }`}
+                >
+                  {item.name}
+                </Link>
+              )
             ))}
             <div className="flex space-x-2 pt-4 border-t border-gray-800 mt-4">
               <button
