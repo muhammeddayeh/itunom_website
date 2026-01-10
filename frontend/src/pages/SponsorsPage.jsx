@@ -3,7 +3,6 @@ import { useTranslation } from 'react-i18next';
 
 const SponsorsPage = () => {
   const { t } = useTranslation();
-  // TODO: Bu bölümü gerçek sponsorlarınızın bilgileriyle güncelleyin
   const mainSponsors = [
     {
       name: 'Turkish Technic',
@@ -75,9 +74,7 @@ const SponsorsPage = () => {
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
             {t('sponsors.description')}
           </p>
-          <p className="text-red-500 mt-4">
-            {t('sponsors.note')}
-          </p>
+          
         </div>
       </section>
 

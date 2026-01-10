@@ -6,22 +6,22 @@ const AchievementsPage = () => {
   const { t } = useTranslation();
   // TODO: Update this section with your real achievements
   const suasAchievements = [
-    { year: '2025', place: '11th Place', location: 'Maryland, USA' },
-    { year: '2024', place: '2nd Place', location: 'Maryland, USA', medal: 'silver' },
-    { year: '2023', place: 'Champion', location: 'Maryland, USA', medal: 'gold' },
-    { year: '2022', place: '3rd Place', location: 'Maryland, USA', medal: 'bronze' },
-    { year: '2019', place: '8th Place', location: 'Maryland, USA' },
-    { year: '2018', place: '7th Place', location: 'Maryland, USA' },
-    { year: '2017', place: '4th Place', location: 'Maryland, USA' },
-    { year: '2016', place: '12th Place', location: 'Maryland, USA' }
+    { year: '2025', place: '11th Place', location: 'Maryland, USA', link: '/araclar/vibe'},
+    { year: '2024', place: '2nd Place', location: 'Maryland, USA', medal: 'silver', link: '/araclar/dissiz' },
+    { year: '2023', place: 'Champion', location: 'Maryland, USA', medal: 'gold', link: '/araclar/simsek' },
+    { year: '2022', place: '3rd Place', location: 'Maryland, USA', medal: 'bronze', link: '/araclar/tosun' },
+    { year: '2019', place: '8th Place', location: 'Maryland, USA', link: '' },
+    { year: '2018', place: '7th Place', location: 'Maryland, USA', link: '/araclar/goldenhorn' },
+    { year: '2017', place: '4th Place', location: 'Maryland, USA', link: '/araclar/lodos' },
+    { year: '2016', place: '12th Place', location: 'Maryland, USA', link: '' }
   ];
 
   const teknofestAchievements = [
-    { year: '2025', place: '3rd Place', location: 'Türkiye', medal: 'bronze' },
-    { year: '2024', place: '3rd Place', location: 'Türkiye', medal: 'bronze' },
-    { year: '2023', place: '2nd Place', location: 'Türkiye', medal: 'silver' },
-    { year: '2021', place: '3rd Place', location: 'Türkiye', medal: 'bronze' },
-    { year: '2019', place: 'Champion', location: 'Türkiye', medal: 'gold' }
+    { year: '2025', place: '3rd Place', location: 'Türkiye', medal: 'bronze', link: '/araclar/vibe' },
+    { year: '2024', place: '3rd Place', location: 'Türkiye', medal: 'bronze', link: '/araclar/dissiz' },
+    { year: '2023', place: '2nd Place', location: 'Türkiye', medal: 'silver', link: '/araclar/simsek' },
+    { year: '2021', place: '3rd Place', location: 'Türkiye', medal: 'bronze', link: '/araclar/kv-55' },
+    { year: '2019', place: 'Champion', location: 'Türkiye', medal: 'gold', link: '/araclar/blacksparrow' }
   ];
 
   const getMedalColor = (medal) => {
@@ -48,97 +48,6 @@ const AchievementsPage = () => {
           <p className="text-xl text-gray-300 max-w-30xl mx-auto">
             {t('achievements.description')}
           </p>
-        </div>
-      </section>
-
-      {/* SUAS Competition Section */}
-      <section className="py-20 px-4 bg-gradient-to-b from-black to-gray-900">
-        <div className="max-w-6xl mx-auto">
-          <h2 className="text-4xl font-bold text-white text-center mb-4">
-            {t('achievements.suas')}
-          </h2>
-          <p className="text-center text-gray-400 mb-4">
-            {t('achievements.suasDesc')}
-          </p>
-          
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {suasAchievements.map((achievement, index) => (
-              <div
-                key={index}
-                className={`relative group bg-gradient-to-br ${getMedalColor(achievement.medal)} p-6 rounded-lg shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 overflow-hidden`}
-              >
-                {achievement.medal && (
-                  <div className="absolute top-0 right-0 p-2">
-                    <Award size={32} className="text-white/80" />
-                  </div>
-                )}
-                
-                <div className="relative z-10">
-                  <div className="flex items-center space-x-2 text-white/90 mb-2">
-                    <Calendar size={18} />
-                    <span className="font-semibold">{achievement.year}</span>
-                  </div>
-                  
-                  <h3 className="text-2xl font-bold text-white mb-3">
-                    {achievement.place}
-                  </h3>
-                  
-                  <div className="flex items-center space-x-2 text-white/80">
-                    <MapPin size={16} />
-                    <span className="text-sm">{achievement.location}</span>
-                  </div>
-                </div>
-                
-                <div className="absolute inset-0 bg-black/20 group-hover:bg-black/0 transition-colors"></div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Teknofest Section */}
-      <section className="py-20 px-4 bg-gradient-to-b from-gray-900 to-black">
-        <div className="max-w-6xl mx-auto">
-          <h2 className="text-4xl font-bold text-white text-center mb-4">
-            {t('achievements.teknofest')}
-          </h2>
-          <p className="text-center text-gray-400 mb-4">
-            {t('achievements.teknofestDesc')}
-          </p>
-          
-          
-          <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-6 max-w-5xl mx-auto">
-            {teknofestAchievements.map((achievement, index) => (
-              <div
-                key={index}
-                className={`relative group bg-gradient-to-br ${getMedalColor(achievement.medal)} p-6 rounded-lg shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 overflow-hidden`}
-              >
-                {achievement.medal && (
-                  <div className="absolute top-0 right-0 p-2">
-                    <Award size={28} className="text-white/80" />
-                  </div>
-                )}
-                
-                <div className="relative z-10">
-                  <div className="flex items-center space-x-2 text-white/90 mb-2">
-                    <Calendar size={16} />
-                    <span className="font-semibold text-sm">{achievement.year}</span>
-                  </div>
-                  
-                  <h3 className="text-xl font-bold text-white mb-3">
-                    {achievement.place}
-                  </h3>
-                  
-                  <div className="flex items-center space-x-2 text-white/80">
-                    <MapPin size={14} />
-                    <span className="text-xs">{achievement.location}</span>
-                  </div>
-                </div>
-                
-                <div className="absolute inset-0 bg-black/20 group-hover:bg-black/0 transition-colors"></div>
-              </div>
-            ))}
-          </div>
         </div>
       </section>
 
@@ -182,6 +91,102 @@ const AchievementsPage = () => {
           </div>
         </div>
       </section>
+      {/* SUAS Competition Section */}
+      <section className="py-20 px-4 bg-gradient-to-b from-gray-900 to-black">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-4xl font-bold text-white text-center mb-4">
+            {t('achievements.suas')}
+          </h2>
+          <p className="text-center text-gray-400 mb-4">
+            {t('achievements.suasDesc')}
+          </p>
+          
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {suasAchievements.map((achievement, index) => (
+              <a href={achievement.link}>
+              <div
+                key={index}
+                className={`relative group bg-gradient-to-br ${getMedalColor(achievement.medal)} p-6 rounded-lg shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 overflow-hidden`}
+              >
+                {achievement.medal && (
+                  <div className="absolute top-0 right-0 p-2">
+                    <Award size={32} className="text-white/80" />
+                  </div>
+                )}
+                
+                <div className="relative z-10">
+                  <div className="flex items-center space-x-2 text-white/90 mb-2">
+                    <Calendar size={18} />
+                    <span className="font-semibold">{achievement.year}</span>
+                  </div>
+                  
+                  <h3 className="text-2xl font-bold text-white mb-3">
+                    {achievement.place}
+                  </h3>
+                  
+                  <div className="flex items-center space-x-2 text-white/80">
+                    <MapPin size={16} />
+                    <span className="text-sm">{achievement.location}</span>
+                  </div>
+                </div>
+                
+                <div className="absolute inset-0 bg-black/20 group-hover:bg-black/0 transition-colors"></div>
+              </div>
+              </a>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Teknofest Section */}
+      <section className="py-20 px-4 bg-gradient-to-b from-black to-gray-900">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-4xl font-bold text-white text-center mb-4">
+            {t('achievements.teknofest')}
+          </h2>
+          <p className="text-center text-gray-400 mb-4">
+            {t('achievements.teknofestDesc')}
+          </p>
+          
+          
+          <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-6 max-w-5xl mx-auto">
+            {teknofestAchievements.map((achievement, index) => (
+              <a href={achievement.link}>
+              <div
+                key={index}
+                className={`relative group bg-gradient-to-br ${getMedalColor(achievement.medal)} p-6 rounded-lg shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 overflow-hidden`}
+              >
+                {achievement.medal && (
+                  <div className="absolute top-0 right-0 p-2">
+                    <Award size={28} className="text-white/80" />
+                  </div>
+                )}
+                
+                <div className="relative z-10">
+                  <div className="flex items-center space-x-2 text-white/90 mb-2">
+                    <Calendar size={16} />
+                    <span className="font-semibold text-sm">{achievement.year}</span>
+                  </div>
+                  
+                  <h3 className="text-xl font-bold text-white mb-3">
+                    {achievement.place}
+                  </h3>
+                  
+                  <div className="flex items-center space-x-2 text-white/80">
+                    <MapPin size={14} />
+                    <span className="text-xs">{achievement.location}</span>
+                  </div>
+                </div>
+                
+                <div className="absolute inset-0 bg-black/20 group-hover:bg-black/0 transition-colors"></div>
+              </div>
+              </a>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      
     </div>
   );
 };

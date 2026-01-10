@@ -182,9 +182,13 @@ const VehiclesPage = () => {
             {t('vehicles.past')}
           </h2>
       
-
+                
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {pastVehicles.map((vehicle, index) => (
+              <Link 
+                    to={`/araclar/${vehicle.slug}`}
+                    
+                  >
               <div
                 key={index}
                 className="group bg-gray-800/30 rounded-lg overflow-hidden border border-gray-700 hover:border-red-600 transition-all duration-300 hover:scale-105"
@@ -205,14 +209,12 @@ const VehiclesPage = () => {
                 <div className="p-6">
                   <p className="text-gray-400 text-sm mb-3">{vehicle.competition}</p>
                   <p className="text-gray-300 text-sm">{vehicle.description}</p>
-                  <Link 
-                    to={`/araclar/${vehicle.slug}`}
-                    className="mt-4 inline-flex items-center text-red-500 hover:text-red-400 transition-colors font-semibold text-sm"
-                  >
+                  <span className="mt-4 inline-flex items-center text-red-500 hover:text-red-400 transition-colors font-semibold text-sm">
                     {t('vehicles.viewProcess')} <ArrowRight size={16} className="ml-2" />
-                  </Link>
+                  </span>
                 </div>
               </div>
+              </Link>
             ))}
           </div>
         </div>

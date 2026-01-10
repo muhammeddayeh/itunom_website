@@ -144,6 +144,23 @@
       "f5": "Otomatik kalkış ve iniş",
       "f6": "Çoklu hata emniyet (failsafe) mekanizmaları"
     },
+    "descriptions":{
+      "vibe_detailed":"ROBONATION SUAS 2025 Yarışması için geliştirilen bu insansız hava aracı, yük taşıma görevleri için tasarlanmış olup aynı zamanda haritalama yeteneğine de sahiptir. Yerdeki nesneleri tespit ederken, bu nesnelerden alınan verileri gerçek zamanlı olarak yer istasyonuna iletebilir. Yüksek hassasiyetli konumlandırma ve otonom engelden kaçınma yeteneklerine sahiptir.",
+      "dissiz":"Teknofest 2024 Muharebe İHA kategorisi için geliştirilen yüksek manevra kabiliyetine sahip platform.",
+      "dissiz_detailed":"TEKNOFEST 2024 Savaş İHA Yarışması için geliştirilen aracımız, uçuş sırasında diğer hava araçlarını otonom olarak tespit ediyor ve otonom takip ve kilitleme işlemlerini gerçekleştiriyor. Yüksek manevra kabiliyetine sahip olan araç, modern savaş alanlarında sıkça karşılaşılan it dalaşı senaryolarını simüle etmeyi amaçlayarak, diğer İHA'ları kilitlemek için görüntü işleme algoritmaları ve derin öğrenme kullanıyor.",
+      "simsek":"SUAS 2024 için ayrılabilen otonom İHA sistemi.",
+      "simsek_detailed":"The rotary-wing unmanned aerial vehicle developed for AUVSI SUAS 2023 is designed specifically for cargo delivery missions. Leveraging artificial intelligence algorithms, it detects and classifies objects on the ground and accurately drops payloads at designated target locations using its release mechanism. It also features autonomous takeoff and landing capabilities, as well as obstacle avoidance. This vehicle earned 1st place globally in the AUVSI SUAS 2023 competition and 2nd place in the AUVSI SUAS 2024, achieving outstanding success among teams from around the world.",
+      "tosun":"SUAS 2022 yarışmasında 3.lük elde eden yüksek performanslı İHA sistemi.",
+      "tosun_detailed":"AUVSI SUAS 2022 Yarışması için geliştirilen bu araç, insansız kara aracı (UGV) konuşlandırma görevi için tasarlanmıştır ve aynı zamanda haritalama operasyonları da gerçekleştirebilmektedir. Yerdeki nesneleri tespit ederken, bu nesnelerden alınan verileri gerçek zamanlı olarak yer istasyonuna iletebilir. Otonom olarak engellerden kaçınırken yüksek hassasiyetli konumlandırma yapabilme özelliğine sahiptir.",
+      "kv55": "Kompakt ve çevik tasarımıyla Teknofest 2021'de 3. sırayı elde etti.",
+      "kv55_detailed":"TEKNOFEST 2021 Savaş İHA Yarışması için geliştirdiğimiz aracımız, uçuş sırasında diğer hava araçlarını otonom olarak tespit ediyor ve insan müdahalesi olmadan onlara doğru ilerliyor. Yüksek manevra kabiliyetine sahip olan araç, modern savaş alanlarında karşılaşılan it dalaşı senaryolarını simüle etmeyi amaçlayarak, diğer İHA'lara kilitlenmek için görüntü işleme algoritmaları ve derin öğrenme kullanıyor.",
+      "blacksparrow":"Yenilikçi karbon fiber gövdeye ve gelişmiş aviyonik sistemlere sahip platform.",
+      "blacksparrow_detailed":"AUVSI SUAS 2020 Yarışması için tasarlanan aracımız, özellikle otonom insansız kara aracı (UGV) konuşlandırma görevi için geliştirilmiştir. Görüntü işleme teknolojisiyle donatılmış olan araç, yerdeki nesneleri tespit edebilme, yolları takip edebilme, engellerden kaçınabilme ve yük teslimatı yapabilme yeteneğine sahiptir.",
+      "goldenhorn":"Yüksek verimli kanat profili ve modüler tasarımıyla öne çıkan sistem.",
+      "goldenhorn": "AUVSI SUAS 2019 Yarışması için geliştirilen aracımız, otonom insansız kara aracı (UGV) konuşlandırma görevi için özel olarak tasarlanmıştır. Görüntü işleme kullanarak yerdeki nesneleri algılayabilir ve yol izleme, engelden kaçınma ve yük taşıma gibi yeteneklerle donatılmıştır.",
+      "lodos": "SUAS 2017'de 4. sırayı elde eden istikrarlı ve güvenilir platform.",
+      "lodos_detailed": "AUVSI SUAS 2018 Yarışması için geliştirilen döner kanatlı insansız hava aracı, tamamen otonom uçuş yeteneğine sahiptir. İnsansız kara aracı (UGV) konuşlandırma görevi için tasarlanan sistem, nesne tanıma ve engelden kaçınma yeteneklerine sahiptir."
+    },
     "philosophyItems": {
       "autonomous": {
         "title": "Otonom Sistemler",
@@ -176,6 +193,23 @@
       "workshop": "Atölye",
       "electronics": "Elektronik",
       "navigation": "Navigasyon"
+    },
+    "titles": {
+      "t1": "SUAS 2023 Şampiyonluk",
+      "t2": "Tanıtım Toplantısı",
+      "t3": "Teknofest Başarısı",
+      "t4": "SUAS Yarışması Heyecanı",
+      "t5": "SUAS Hazırlık Testleri"
+    },
+    "excerpts":{
+      "e1": "SUAS 2023 yarışmasında şampiyon olduğumuzu duyurmaktan gurur duyuyoruz! Instagram'daki zafer paylaşımımızı görmek için tıklayın.",
+      "e2": "Yeni dönem tanıtım toplantımızdan anlar. Aramıza katılan yeni arkadaşlarımızla bir araya geldik.",
+      "e3": "Teknofest yarışmasındaki sıralamamız ve ödül töreninden görüntüler.",
+      "e4": "SUAS yarışmasındaki performansımız ve yarışma alanından bazı görüntüler.",
+      "e5": "Yarışma öncesinde gerçekleştirdiğimiz kritik uçuş testleri ve hazırlık süreçleri."
+    },
+    "authors":{
+      "a1": "ITUNOM Ekibi"
     },
     "note": "NOT: Bu bölümü gerçek blog yazılarınızla güncelleyin",
     "newsletter": {

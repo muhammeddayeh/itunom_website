@@ -144,6 +144,23 @@
       "f5": "Automatic takeoff and landing",
       "f6": "Multiple failsafe mechanisms"
     },
+    "descriptions":{
+      "vibe_detailed":"This unmanned aerial vehicle, developed for the ROBONATION SUAS 2025 Competition, is designed for payload delivery missions and is also capable of mapping. While detecting objects on the ground, it can transmit the data received from these objects to the ground station in real time. It features high-precision positioning and autonomous obstacle avoidance capabilities.",
+      "dissiz":"High-maneuverability platform developed for the Teknofest 2024 Combat UAV category.",
+      "dissiz_detailed":"Our vehicle, developed for the TEKNOFEST 2024 Fighter UAV Competition, autonomously detects other aircraft during flight and performs autonomous tracking and locking onto them. Equipped with high maneuverability, the vehicle utilizes image processing algorithms and deep learning to lock onto other UAVs, aiming to simulate dogfight scenarios commonly encountered in modern battlefields.",
+      "simsek":"SUAS 2024 is a detachable autonomous UAV system.",
+      "simsek_detailed":"The rotary-wing unmanned aerial vehicle developed for AUVSI SUAS 2023 is designed specifically for cargo delivery missions. Leveraging artificial intelligence algorithms, it detects and classifies objects on the ground and accurately drops payloads at designated target locations using its release mechanism. It also features autonomous takeoff and landing capabilities, as well as obstacle avoidance. This vehicle earned 1st place globally in the AUVSI SUAS 2023 competition and 2nd place in the AUVSI SUAS 2024, achieving outstanding success among teams from around the world.",
+      "tosun":"High-performance UAV system that achieved 3rd place in the SUAS 2022 competition.",
+      "tosun_detailed":"This vehicle, developed for the AUVSI SUAS 2022 Competition, was designed for the task of deploying an unmanned ground vehicle (UGV) and is also capable of performing mapping operations. While detecting objects on the ground, it can transmit data received from these objects to the ground station in real time. It is capable of high-precision positioning while autonomously avoiding obstacles.",
+      "kv55": "Compact and agile design that secured 3rd place in Teknofest 2021.",
+      "kv55_detailed":"Our vehicle, developed for the TEKNOFEST 2021 Fighter UAV Competition, autonomously detects other aircraft during flight and navigates toward them without human intervention. Equipped with high maneuverability, it uses image processing algorithms and deep learning to lock onto other UAVs, aiming to simulate dogfight scenarios encountered in modern battlefields.",
+      "blacksparrow":"Platform featuring an innovative carbon fiber airframe and advanced avionics.",
+      "blacksparrow_detailed":"Our vehicle, designed for the AUVSI SUAS 2020 Competition, was developed specifically for the autonomous unmanned ground vehicle (UGV) deployment mission. Equipped with image processing technology, it is capable of detecting objects on the ground, following paths, avoiding obstacles, and performing payload delivery.",
+      "goldenhorn":"System distinguished by its high-efficiency wing profile and modular design.",
+      "goldenhorn_detailed":"Our vehicle, developed for the AUVSI SUAS 2019 Competition, was specifically designed for the autonomous unmanned ground vehicle (UGV) deployment mission. Using image processing, it can detect objects on the ground and is equipped with capabilities such as path following, obstacle avoidance, and payload delivery.",
+      "lodos": "Stable and reliable platform that achieved 4th place in SUAS 2017.",
+      "lodos_detailed": "The rotary-wing unmanned aerial vehicle developed for the AUVSI SUAS 2018 Competition is capable of fully autonomous flight. Designed for the unmanned ground vehicle (UGV) deployment mission, the system features object recognition and obstacle avoidance capabilities."
+    },
     "philosophyItems": {
       "autonomous": {
         "title": "Autonomous Systems",
@@ -176,6 +193,23 @@
       "workshop": "Workshop",
       "electronics": "Electronics",
       "navigation": "Navigation"
+    },
+    "titles": {
+      "t1": "SUAS 2023 Championship Victory",
+      "t2": "Introductory Meeting",
+      "t3": "Teknofest Success",
+      "t4": "SUAS Competition Excitement",
+      "t5": "SUAS Preparation Tests"
+    },
+    "excerpts":{
+      "e1": "We are proud to announce our championship at the SUAS 2023 competition! Click to see our victory post on Instagram.",
+      "e2": "Moments from our new term introductory meeting. We came together with our new friends who joined us.",
+      "e3": "Our ranking in the Teknofest competition and images from the award ceremony.",
+      "e4": "Our performance at the SUAS competition and some footage from the field.",
+      "e5": "Critical flight tests and preparation processes we carried out before the competition."
+    },
+    "authors":{
+      "a1": "ITUNOM Team"
     },
     "note": "NOTE: Update this section with your actual blog posts",
     "newsletter": {

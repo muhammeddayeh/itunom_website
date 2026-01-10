@@ -31,10 +31,8 @@ const VehicleDetail = () => {
         'vehicles.featuresItems.f5',
         'vehicles.featuresItems.f6'
       ],
-      detailedDescription: 'VIBE represents our latest achievement in autonomous UAV technology, designed specifically for the RoboNation SUAS 2025 competition. This platform incorporates cutting-edge avionics, advanced computer vision systems, and robust mechanical design.',
+      detailedDescription: 'vehicles.descriptions.vibe_detailed',
       gallery: [
-        '/photos/vehicles/tetikorti.jpg',
-        '/photos/vehicles/tetikorti.jpg',
         '/photos/vehicles/tetikorti.jpg'
       ],
       ylink: []
@@ -44,22 +42,8 @@ const VehicleDetail = () => {
       year: '2024',
       competition: 'Teknofest Combat UAV',
       image: '/photos/vehicles/dissizkucuk.jpg',
-      description: 'High-maneuverability platform developed for the Teknofest 2024 Combat UAV category.',
-      specs: [
-        { icon: <Ruler size={20} />, label: 'Wingspan', value: '2.2 m' },
-        { icon: <Weight size={20} />, label: 'Weight', value: '12 kg' },
-        { icon: <Battery size={20} />, label: 'Flight Time', value: '25 min' },
-        { icon: <Camera size={20} />, label: 'Camera', value: 'HD Camera' },
-        { icon: <Radio size={20} />, label: 'Range', value: '15 km' },
-        { icon: <Cpu size={20} />, label: 'Processor', value: 'Pixhawk' }
-      ],
-      features: [
-        'High maneuverability for combat scenarios',
-        'Reinforced carbon fiber airframe',
-        'Advanced flight control systems',
-        'Real-time telemetry'
-      ],
-      detailedDescription: 'DİŞSİZ was engineered for high-speed maneuvers and combat operations. Its robust design and powerful propulsion system make it ideal for competitive UAV combat scenarios.',
+      description: 'vehicles.descriptions.dissiz',
+      detailedDescription: 'vehicles.descriptions.dissiz_detailed',
       gallery: [
         '/photos/vehicles/dissizkucuk.jpg'
       ],
@@ -70,22 +54,8 @@ const VehicleDetail = () => {
       year: '2023',
       competition: 'RoboNation SUAS 2024',
       image: '/photos/vehicles/simseknew.jpg',
-      description: 'Autonomous UAV system developed for SUAS 2024.',
-      specs: [
-        { icon: <Ruler size={20} />, label: 'Wingspan', value: '2.5 m' },
-        { icon: <Weight size={20} />, label: 'Weight', value: '13 kg' },
-        { icon: <Battery size={20} />, label: 'Flight Time', value: '30 min' },
-        { icon: <Camera size={20} />, label: 'Camera', value: '4K Camera' },
-        { icon: <Radio size={20} />, label: 'Range', value: '18 km' },
-        { icon: <Cpu size={20} />, label: 'Processor', value: 'Jetson Nano' }
-      ],
-      features: [
-        'Autonomous navigation system',
-        'Object detection and tracking',
-        'Efficient aerodynamic design',
-        'Modular payload system'
-      ],
-      detailedDescription: 'ŞİMŞEK showcases our advancement in autonomous flight technology with sophisticated computer vision and navigation capabilities.',
+      description: 'vehicles.descriptions.simsek',
+      detailedDescription: 'vehicles.descriptions.simsek_detailed',
       gallery: [
         '/photos/vehicles/simseknew.jpg'
       ],
@@ -96,22 +66,8 @@ const VehicleDetail = () => {
       year: '2022',
       competition: 'AUVSI SUAS 2022',
       image: '/photos/vehicles/tosunson.jpg',
-      description: 'High-performance UAV system that achieved 3rd place in the SUAS 2022 competition.',
-      specs: [
-        { icon: <Ruler size={20} />, label: 'Wingspan', value: '2.6 m' },
-        { icon: <Weight size={20} />, label: 'Weight', value: '14 kg' },
-        { icon: <Battery size={20} />, label: 'Flight Time', value: '32 min' },
-        { icon: <Camera size={20} />, label: 'Camera', value: '4K Gimbal' },
-        { icon: <Radio size={20} />, label: 'Range', value: '19 km' },
-        { icon: <Cpu size={20} />, label: 'Processor', value: 'Jetson Xavier' }
-      ],
-      features: [
-        'Award-winning design (3rd place)',
-        'Advanced autonomous capabilities',
-        'Precision landing system',
-        'Robust communication system'
-      ],
-      detailedDescription: 'TOSUN achieved remarkable success at SUAS 2022, securing 3rd place with its reliable performance and advanced autonomous systems.',
+      description: 'vehicles.descriptions.tosun',
+      detailedDescription: 'vehicles.descriptions.tosun_detailed',
       gallery: [
         '/photos/vehicles/tosunson.jpg'
       ],
@@ -122,22 +78,8 @@ const VehicleDetail = () => {
       year: '2021',
       competition: 'Teknofest 2021',
       image: '/photos/vehicles/kv55website.png',
-      description: 'Compact and agile design that secured 3rd place in Teknofest 2021.',
-      specs: [
-        { icon: <Ruler size={20} />, label: 'Wingspan', value: '2.0 m' },
-        { icon: <Weight size={20} />, label: 'Weight', value: '10 kg' },
-        { icon: <Battery size={20} />, label: 'Flight Time', value: '28 min' },
-        { icon: <Camera size={20} />, label: 'Camera', value: 'HD Camera' },
-        { icon: <Radio size={20} />, label: 'Range', value: '12 km' },
-        { icon: <Cpu size={20} />, label: 'Processor', value: 'Pixhawk' }
-      ],
-      features: [
-        'Compact lightweight design',
-        'High agility',
-        'Efficient power management',
-        '3rd place at Teknofest 2021'
-      ],
-      detailedDescription: 'KV-55 demonstrated exceptional agility and performance, earning 3rd place at Teknofest 2021 with its innovative compact design.',
+      description: 'vehicles.descriptions.kv55',
+      detailedDescription: 'vehicles.descriptions.kv55_detailed',
       gallery: [
         '/photos/vehicles/kv55website.png'
       ]
@@ -147,22 +89,8 @@ const VehicleDetail = () => {
       year: '2020',
       competition: 'SUAS 2020',
       image: '/photos/vehicles/blacksparrowwebsite.png',
-      description: 'Platform featuring an innovative carbon fiber airframe and advanced avionics.',
-      specs: [
-        { icon: <Ruler size={20} />, label: 'Wingspan', value: '2.4 m' },
-        { icon: <Weight size={20} />, label: 'Weight', value: '12 kg' },
-        { icon: <Battery size={20} />, label: 'Flight Time', value: '30 min' },
-        { icon: <Camera size={20} />, label: 'Camera', value: 'HD Gimbal' },
-        { icon: <Radio size={20} />, label: 'Range', value: '16 km' },
-        { icon: <Cpu size={20} />, label: 'Processor', value: 'Pixhawk' }
-      ],
-      features: [
-        'Carbon fiber construction',
-        'Advanced avionics suite',
-        'Stable flight characteristics',
-        'Modular design'
-      ],
-      detailedDescription: 'BLACKSPARROW featured innovative carbon fiber construction and advanced avionics, setting new standards for our team.',
+      description: 'vehicles.descriptions.blacksparrow',
+      detailedDescription: 'vehicles.descriptions.blacksparrow_detailed',
       gallery: [
         '/photos/vehicles/blacksparrowwebsite.png'
       ]
@@ -172,22 +100,8 @@ const VehicleDetail = () => {
       year: '2018',
       competition: 'AUVSI SUAS 2018',
       image: '/photos/vehicles/goldenhornwebsite.png',
-      description: 'System distinguished by its high-efficiency wing profile and modular design.',
-      specs: [
-        { icon: <Ruler size={20} />, label: 'Wingspan', value: '2.3 m' },
-        { icon: <Weight size={20} />, label: 'Weight', value: '11 kg' },
-        { icon: <Battery size={20} />, label: 'Flight Time', value: '29 min' },
-        { icon: <Camera size={20} />, label: 'Camera', value: 'HD Camera' },
-        { icon: <Radio size={20} />, label: 'Range', value: '14 km' },
-        { icon: <Cpu size={20} />, label: 'Processor', value: 'Pixhawk' }
-      ],
-      features: [
-        'High-efficiency wing profile',
-        'Modular payload system',
-        'Optimized aerodynamics',
-        'Reliable performance'
-      ],
-      detailedDescription: 'GOLDENHORN showcased our expertise in aerodynamic design with its high-efficiency wing profile and modular architecture.',
+      description: 'vehicles.descriptions.goldenhorn',
+      detailedDescription: 'vehicles.descriptions.goldenhorn_detailed',
       gallery: [
         '/photos/vehicles/goldenhornwebsite.png'
       ]
@@ -197,22 +111,8 @@ const VehicleDetail = () => {
       year: '2017',
       competition: 'AUVSI SUAS 2017',
       image: '/photos/vehicles/lodoswebsite.png',
-      description: 'Stable and reliable platform that achieved 4th place in SUAS 2017.',
-      specs: [
-        { icon: <Ruler size={20} />, label: 'Wingspan', value: '2.2 m' },
-        { icon: <Weight size={20} />, label: 'Weight', value: '10.5 kg' },
-        { icon: <Battery size={20} />, label: 'Flight Time', value: '27 min' },
-        { icon: <Camera size={20} />, label: 'Camera', value: 'HD Camera' },
-        { icon: <Radio size={20} />, label: 'Range', value: '13 km' },
-        { icon: <Cpu size={20} />, label: 'Processor', value: 'Pixhawk' }
-      ],
-      features: [
-        'Exceptional stability',
-        'Reliable flight systems',
-        '4th place at SUAS 2017',
-        'Proven design'
-      ],
-      detailedDescription: 'LODOS earned 4th place at SUAS 2017 through its exceptional stability and reliable performance in challenging conditions.',
+      description: 'vehicles.descriptions.lodos',
+      detailedDescription: 'vehicles.descriptions.lodos_detailed',
       gallery: [
         '/photos/vehicles/lodoswebsite.png'
       ],
@@ -254,7 +154,7 @@ const VehicleDetail = () => {
                 <p className="text-xl text-red-500 font-semibold">{vehicle.competition}</p>
               </div>
               <p className="text-gray-300 text-lg leading-relaxed">
-                {vehicle.detailedDescription}
+                {t(vehicle.detailedDescription)}
               </p>
             </div>
 
@@ -270,48 +170,53 @@ const VehicleDetail = () => {
         </div>
       </section>
 
-      {/* Technical Specifications */}
-      <section className="py-16 px-4 bg-gradient-to-b from-black to-gray-900">
-        <div className="max-w-7xl mx-auto">
-          <h2 className="text-3xl font-bold text-white mb-8">{t('vehicles.specs')}</h2>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {vehicle.specs.map((spec, index) => (
-              <div
-                key={index}
-                className="bg-gray-800/50 p-6 rounded-lg border border-gray-700 hover:border-red-600 transition-all duration-300 hover:scale-105"
-              >
-                <div className="flex items-center space-x-3 text-red-500 mb-3">
-                  {spec.icon}
-                  <span className="text-gray-400 font-medium">{spec.label}</span>
-                </div>
-                <p className="text-white text-2xl font-bold">{spec.value}</p>
-              </div>
-            ))}
+      {/* Technical Specifications - Only render if specs exist */}
+{vehicle.specs && vehicle.specs.length > 0 && (
+  <section className="py-16 px-4 bg-gradient-to-b from-black to-gray-900">
+    <div className="max-w-7xl mx-auto">
+      <h2 className="text-3xl font-bold text-white mb-8">{t('vehicles.specs')}</h2>
+      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {vehicle.specs.map((spec, index) => (
+          <div
+            key={index}
+            className="bg-gray-800/50 p-6 rounded-lg border border-gray-700 hover:border-red-600 transition-all duration-300 hover:scale-105"
+          >
+            <div className="flex items-center space-x-3 text-red-500 mb-3">
+              {spec.icon}
+              <span className="text-gray-400 font-medium">{spec.label}</span>
+            </div>
+            <p className="text-white text-2xl font-bold">{spec.value}</p>
           </div>
-        </div>
-      </section>
+        ))}
+      </div>
+    </div>
+  </section>
+)}
 
-      {/* Key Features */}
-      <section className="py-16 px-4 bg-gradient-to-b from-gray-900 to-black">
-        <div className="max-w-7xl mx-auto">
-          <h2 className="text-3xl font-bold text-white mb-8">{t('vehicles.features')}</h2>
-          <div className="grid md:grid-cols-2 gap-4">
-            {vehicle.features.map((feature, index) => (
-              <div
-                key={index}
-                className="bg-gray-800/30 p-6 rounded-lg border border-gray-700 hover:border-red-600 transition-colors"
-              >
-                <div className="flex items-start space-x-3">
-                  <span className="text-red-500 text-2xl mt-1">•</span>
-                  <span className="text-gray-300 text-lg">
-                    {feature.startsWith('vehicles.') ? t(feature) : feature}
-                  </span>
-                </div>
-              </div>
-            ))}
+{/* Key Features - Only render if features exist */}
+{vehicle.features && vehicle.features.length > 0 && (
+  <section className="py-16 px-4 bg-gradient-to-b from-gray-900 to-black">
+    <div className="max-w-7xl mx-auto">
+      <h2 className="text-3xl font-bold text-white mb-8">{t('vehicles.features')}</h2>
+      <div className="grid md:grid-cols-2 gap-4">
+        {vehicle.features.map((feature, index) => (
+          <div
+            key={index}
+            className="bg-gray-800/30 p-6 rounded-lg border border-gray-700 hover:border-red-600 transition-colors"
+          >
+            <div className="flex items-start space-x-3">
+              <span className="text-red-500 text-2xl mt-1">•</span>
+              <span className="text-gray-300 text-lg">
+                {feature.startsWith('vehicles.') ? t(feature) : feature}
+              </span>
+            </div>
           </div>
-        </div>
-      </section>
+        ))}
+      </div>
+    </div>
+  </section>
+)}
+
 
       {/* Video Gallery */}
       {vehicle.ylink && vehicle.ylink.length > 0 && (

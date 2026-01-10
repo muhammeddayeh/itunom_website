@@ -15,6 +15,7 @@ import SponsorsPage from "./pages/SponsorsPage";
 import ContactPage from "./pages/ContactPage";
 import JoinUsPage from "./pages/JoinUsPage";
 import VehicleDetail from "./pages/VehicleDetail";
+import ScrollToTop from './components/ScrollToTop';
 
 const GalleryPage = () => {
   const [activeTab, setActiveTab] = useState('photos');
@@ -34,6 +35,7 @@ function App() {
   return (
     <div className="App">
       <BrowserRouter>
+        <ScrollToTop />
         <Navbar />
         <Routes>
           <Route path="/" element={<><HomePage /><Footer /></>} />

@@ -88,7 +88,12 @@ const Footer = () => {
             <div>
               <h4 className="text-white font-semibold mb-2">{t('footer.address')}</h4>
               <p className="text-gray-400 whitespace-pre-line">
-                {t('footer.addressText')}
+                <a 
+                  href="https://maps.app.goo.gl/KQd8edMwTB4q56T79"
+                  target="_blank"
+                  rel="noopener noreferrer"> 
+                  {t('footer.addressText')}
+                </a>
               </p>
             </div>
           </div>
@@ -104,33 +109,33 @@ const Footer = () => {
             {/* Social Media Icons */}
             <div className="flex space-x-4">
               <a
-                href="#"
+                href="https://www.instagram.com/itunomuavteam?igsh=NTZrYjFxbGQzZXpm"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="p-2 bg-gray-800 hover:bg-red-600 text-white rounded-lg transition-colors"
                 title="Instagram"
               >
                 <Instagram size={20} />
               </a>
               <a
-                href="#"
+                href="https://www.linkedin.com/company/itunomuavteam/"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="p-2 bg-gray-800 hover:bg-red-600 text-white rounded-lg transition-colors"
                 title="LinkedIn"
               >
                 <Linkedin size={20} />
               </a>
               <a
-                href="#"
+                href="https://youtube.com/@itunomuavteam?si=lNGYWg7QpKiqQAV7"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="p-2 bg-gray-800 hover:bg-red-600 text-white rounded-lg transition-colors"
                 title="YouTube"
               >
                 <Youtube size={20} />
               </a>
-              <a
-                href="#"
-                className="p-2 bg-gray-800 hover:bg-red-600 text-white rounded-lg transition-colors"
-                title="GitHub"
-              >
-                <Github size={20} />
-              </a>
+              
             </div>
 
             {/* Language Switcher - TR / EN */}

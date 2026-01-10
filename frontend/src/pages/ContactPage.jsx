@@ -75,11 +75,16 @@ const ContactPage = () => {
                   </div>
                   <div>
                     <h3 className="text-white font-semibold mb-1">{t('contact.address')}</h3>
+                    <a 
+                  href="https://maps.app.goo.gl/KQd8edMwTB4q56T79"
+                  target="_blank"
+                  rel="noopener noreferrer"> 
                     <p className="text-gray-300">
                       Istanbul Technical University<br />
                       Ayazağa Campus<br />
                       34469 Maslak, Istanbul
                     </p>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -91,33 +96,33 @@ const ContactPage = () => {
                 </h3>
                 <div className="flex space-x-4">
                   <a
-                    href="#"
+                    href="https://www.instagram.com/itunomuavteam?igsh=NTZrYjFxbGQzZXpm"
+                  target="_blank"
+                  rel="noopener noreferrer"
                     className="p-3 bg-gray-800 hover:bg-red-600 text-white rounded-lg transition-colors"
                     title="Instagram"
                   >
                     <Instagram size={24} />
                   </a>
                   <a
-                    href="#"
+                    href="https://www.linkedin.com/company/itunomuavteam/"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="p-3 bg-gray-800 hover:bg-red-600 text-white rounded-lg transition-colors"
                     title="LinkedIn"
                   >
                     <Linkedin size={24} />
                   </a>
                   <a
-                    href="#"
+                    href="https://youtube.com/@itunomuavteam?si=lNGYWg7QpKiqQAV7"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="p-3 bg-gray-800 hover:bg-red-600 text-white rounded-lg transition-colors"
                     title="YouTube"
                   >
                     <Youtube size={24} />
                   </a>
-                  <a
-                    href="#"
-                    className="p-3 bg-gray-800 hover:bg-red-600 text-white rounded-lg transition-colors"
-                    title="GitHub"
-                  >
-                    <Github size={24} />
-                  </a>
+                  
                 </div>
               </div>
             </div>
@@ -214,17 +219,16 @@ const ContactPage = () => {
           </h2>
           
           <div className="relative h-96 bg-gray-800 rounded-lg overflow-hidden border border-gray-700">
-            {/* TODO: You can add a Google Maps iframe or map component here */}
-            <div className="absolute inset-0 flex items-center justify-center">
-              <div className="text-center">
-                <MapPin size={64} className="text-red-500 mx-auto mb-4" />
-                <p className="text-white text-xl font-semibold">Istanbul Technical University</p>
-                <p className="text-gray-400">Ayazağa Campus, Maslak, Istanbul</p>
-                <p className="text-gray-500 text-sm mt-4">
-                  NOTE: You can embed a Google Maps iframe here
-                </p>
-              </div>
-            </div>
+            <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d95270.72483806618!2d28.956471009790945!3d41.037176426277355!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cab5e7bbf9e733%3A0xb837a9180f79ad03!2sITU%20Aerospace%20Research%20Center%20(ITU-ARC)!5e1!3m2!1sen!2str!4v1768045125772!5m2!1sen!2str" 
+              width="100%" 
+              height="100%" 
+              style={{ border: 0 }} 
+              allowFullScreen="" 
+              loading="lazy" 
+              referrerPolicy="no-referrer-when-downgrade"
+              title="ITU Aerospace Research Center Location"
+            />
           </div>
         </div>
       </section>
