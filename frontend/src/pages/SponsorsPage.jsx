@@ -1,5 +1,6 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
+import PageTitle from '../components/PageTitle';
 
 const SponsorsPage = () => {
   const { t } = useTranslation();
@@ -8,55 +9,64 @@ const SponsorsPage = () => {
       name: 'Turkish Technic',
       logo: '/photos/sponsors/1.png',
       tier: '',
-      descriptionKey: 'sponsors.list.turkishTechnic'
+      descriptionKey: 'sponsors.list.turkishTechnic',
+      link: "https://turkishtechnic.com"
     },
     {
       name: 'MKE',
       logo: '/photos/sponsors/mke.png',
       tier: '',
-      descriptionKey: 'sponsors.list.mke'
+      descriptionKey: 'sponsors.list.mke',
+      link: "https://www.mke.gov.tr"
     },
     {
       name: 'TÜBİTAK',
       logo: '/photos/sponsors/tubitak.png',
       tier: '',
-      descriptionKey: 'sponsors.list.tubitak'
+      descriptionKey: 'sponsors.list.tubitak',
+      link: "https://tubitak.gov.tr/tr"
     },
     { 
       name: 'Halkbank', 
       logo: '/photos/sponsors/halkbank.png',
       tier: '',
-      descriptionKey: 'sponsors.list.halkbank'
+      descriptionKey: 'sponsors.list.halkbank',
+      link: "https://www.halkbank.com.tr"
     },
     { 
       name: 'ASELSAN', 
       logo: '/photos/sponsors/aselsann.png',
       tier: '',
-      descriptionKey: 'sponsors.list.aselsan'
+      descriptionKey: 'sponsors.list.aselsan',
+      link: "https://www.aselsan.com/"
     },
     { 
       name: 'Arz Portföy', 
       logo: '/photos/sponsors/arz.png',
       tier: '',
-      descriptionKey: 'sponsors.list.arzPortfoy'
+      descriptionKey: 'sponsors.list.arzPortfoy',
+      link: "https://arzportfoy.com"
     },
     { 
       name: 'Ege Bant', 
       logo: '/photos/sponsors/ege_bant.png',
       tier: '',
-      descriptionKey: 'sponsors.list.egeBant'
+      descriptionKey: 'sponsors.list.egeBant',
+      link: "https://www.egebant.com.tr/tr"
     },
     { 
       name: 'Koyuncu', 
       logo: '/photos/sponsors/2.png',
       tier: '',
-      descriptionKey: 'sponsors.list.koyuncu'
+      descriptionKey: 'sponsors.list.koyuncu',
+      link: "https://koyuncu.com/en"
     },
     { 
       name: 'İTÜ', 
       logo: '/photos/sponsors/itu.png',
       tier: '',
-      descriptionKey: 'sponsors.list.itu'
+      descriptionKey: 'sponsors.list.itu',
+      link: "https://www.itu.edu.tr"
     }
   ];
 
@@ -64,6 +74,8 @@ const SponsorsPage = () => {
 
   return (
     <div className="min-h-screen bg-black pt-16">
+            <PageTitle titleKey="pageTitles.sponsor" />
+
       {/* Hero Section */}
       <section className="relative py-20 px-4 bg-gradient-to-b from-black via-gray-900 to-black">
         <div className="max-w-6xl mx-auto text-center">
@@ -91,6 +103,11 @@ const SponsorsPage = () => {
                 key={index}
                 className="group bg-white rounded-lg p-8 shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105"
               >
+                <a
+                href={sponsor.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="">
                 <div className="flex items-center justify-center h-32 mb-6">
                   <img
                     src={sponsor.logo}
@@ -105,6 +122,8 @@ const SponsorsPage = () => {
                   <h3 className="text-xl font-bold text-gray-900 mb-2">{sponsor.name}</h3>
                   <p className="text-gray-600 text-sm">{t(sponsor.descriptionKey)}</p>
                 </div>
+              </a>
+                
               </div>
             ))}
           </div>

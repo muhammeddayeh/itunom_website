@@ -33,10 +33,7 @@
       }
     },
     "features": {
-      "achievements": {
-        "title": "Our Achievements",
-        "description": "SUAS 2023 Champion, Teknofest 2024 3rd Place"
-      },
+      
       "team": {
         "title": "Our Team",
         "description": "30+ student engineers and researchers"
@@ -44,12 +41,93 @@
       "vehicles": {
         "title": "Our Vehicles",
         "description": "Autonomous UAV systems and technologies"
-      },
-      "blog": {
-        "title": "Blog",
-        "description": "Our projects and development processes"
       }
     },
+    "timeline": {
+        "badge": "Our Journey",
+        "title": "Our Vehicles",
+        "subtitle": "Journey through our innovations",
+        "viewAll": "View All Vehicles",
+        "vehicles": [
+          {
+            "name": "VIBE",
+            "description": "SAUS 11th Place"
+          },
+          {
+            "name": "DİŞSİZ",
+            "description": "SUAS 2nd Place"
+          },
+          {
+            "name": "ŞİMŞEK",
+            "description": "SUAS Champion"
+          },
+          {
+            "name": "TOSUN",
+            "description": "SUAS 3rd Place"
+          },
+          {
+            "name": "KV-55",
+            "description": "Teknofest 3rd Place"
+          },
+          {
+            "name": "BLACKSPARROW",
+            "description": "Teknofest Chamption"
+          },{
+            "name": "GOLDENHORN",
+            "description": "SUAS 7th Place"
+          },{
+            "name": "LODOS",
+            "description": "SUAS 4th Place"
+          }
+        ]
+      },
+      "achievements": {
+        "title": "Our Achievements",
+        "subtitle": "Celebrating our success",
+        "viewAll": "View All Achievements",
+        "description": "SUAS 2023 Champion, Teknofest 2024 3rd Place",
+        "recent": [
+          {
+            "title": "3rd of Turkiye",
+            "category": "Teknofest",
+            "date": "2025"
+          },
+          {
+            "title": "2nd of World",
+            "category": "SUAS",
+            "date": "2024"
+          },
+          {
+            "title": "World Champion",
+            "category": "SUAS",
+            "date": "2023"
+          }
+        ]
+      },
+      "blog": {
+        "title": "Latest from Our Blog",
+        "subtitle": "Stories from our team",
+        "description": "Our projects and development processes",
+        "viewAll": "View All Posts",
+        "readMore": "Read more",
+        "posts": [
+          {
+            "title": "Building Our Latest Autonomous Drone",
+            "excerpt": "Discover the engineering challenges and solutions behind our newest autonomous flight system...",
+            "date": "2024-01-15"
+          },
+          {
+            "title": "Competition Success: Lessons Learned",
+            "excerpt": "Reflecting on our recent competition victory and the teamwork that made it possible...",
+            "date": "2024-01-10"
+          },
+          {
+            "title": "The Future of Drone Technology",
+            "excerpt": "Exploring emerging trends in UAV development and what they mean for our team...",
+            "date": "2024-01-05"
+          }
+        ]
+      },
     "cta": {
       "title": "Join Our Team",
       "description": "Shape the future of aviation technologies with ITUNOM. Work on autonomous systems, artificial intelligence, and drone technologies.",
@@ -106,7 +184,25 @@
       "title": "Want to Join Our Team?",
       "description": "If you are an ITU student and interested in aviation technologies, you can join us. We recruit new members every semester.",
       "button": "Contact for Application"
-    }
+    },"sections": {
+      "mechanical": "Mechanical Team",
+      "software": "Software Team",
+      "avionics": "Avionics Team",
+      "promotion": "Promotion & Sponsorship Team"
+    },
+    "roles": {
+      "captain": "Team Captain",
+      "softwareLeader": "Software Team Leader",
+      "mechanicalLeader": "Mechanical Team Leader",
+      "avionicLeader": "Avionics Team Leader",
+      "promotionLeader": "Promotion & Sponsorship Team Leader",
+      "mechanicalMember": "Mechanical Team Member",
+      "softwareMember": "Software Team Member",
+      "avionicsMember": "Avionics Team Member",
+      "promotionMember": "Promotion & Sponsorship Team Member",
+      "advisor": "Academic Advisor"
+    },
+    "advisorDepartment": "Faculty of Aeronautics and Astronautics"
   },
   "achievements": {
     "title": "OUR ACHIEVEMENTS",
@@ -344,5 +440,15 @@
     "learnMore": "Learn More",
     "viewAll": "View All",
     "close": "Close"
+  },
+  "pageTitles": {
+    "home": "Home - ITUNOM UAV",
+    "vehicles": "Vehicles - ITUNOM UAV",
+    "team": "Team - ITUNOM UAV",
+    "achievements": "Achievements - ITUNOM UAV",
+    "blog": "Blog - ITUNOM UAV",
+    "contact": "Contact - ITUNOM UAV",
+    "sponsor": "Sponsors - ITUNOM UAV",
+    "join": "Join Us - ITUNOM UAV"
   }
 }

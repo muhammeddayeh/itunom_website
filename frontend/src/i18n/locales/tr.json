@@ -54,6 +54,89 @@
       "title": "Takımımıza Katılın",
       "description": "İTÜNOM ile havacılık teknolojilerinin geleceğini şekillendirin. Otonom sistemler, yapay zeka ve drone teknolojileri üzerine çalışın.",
       "button": "İletişime Geçin"
+    },
+    "timeline": {
+      "badge": "Yolculuğumuz",
+      "title": "Araçlarımız",
+      "subtitle": "İnovasyonlarımızda yolculuk",
+      "viewAll": "Tüm Araçları Görüntüle",
+      "vehicles": [
+        {
+            "name": "VIBE",
+            "description": "SAUS 11. Sıra"
+          },
+          {
+            "name": "DİŞSİZ",
+            "description": "SUAS 2. Sıra"
+          },
+          {
+            "name": "ŞİMŞEK",
+            "description": "SUAS Şampiyon"
+          },
+          {
+            "name": "TOSUN",
+            "description": "SUAS 3. Sıra"
+          },
+          {
+            "name": "KV-55",
+            "description": "Teknofest 3. Sıra"
+          },
+          {
+            "name": "BLACKSPARROW",
+            "description": "Teknofest Şampiyon"
+          },{
+            "name": "GOLDENHORN",
+            "description": "SUAS 7th Sıra"
+          },{
+            "name": "LODOS",
+            "description": "SUAS 4th Sıra"
+          }
+      ]
+    },
+    "achievements": {
+      "title": "Son Başarılar",
+      "subtitle": "Başarılarımızı kutluyoruz",
+      "viewAll": "Tüm Başarıları Görüntüle",
+      "recent": [
+        {
+          "title": "Türkiye Üçüncülüğü",
+          "category": "Teknofest",
+          "date": "2025"
+        },
+        {
+          "title": "Dünya İkinciliği",
+          "category": "SUAS",
+          "date": "2024"
+        },
+        {
+          "title": "Dünya Birinciliği",
+          "category": "SUAS",
+          "date": "2023"
+        }
+      ]
+    },
+    "blog": {
+      "title": "Blogumuzdaki Son Yazılar",
+      "subtitle": "Ekibimizden hikayeler",
+      "viewAll": "Tüm Yazıları Görüntüle",
+      "readMore": "Devamını oku",
+      "posts": [
+        {
+          "title": "En Son Otonom Drone'umuzu İnşa Etmek",
+          "excerpt": "En yeni otonom uçuş sistemimizin arkasındaki mühendislik zorluklarını ve çözümlerini keşfedin...",
+          "date": "2024-01-15"
+        },
+        {
+          "title": "Yarışma Başarısı: Öğrenilen Dersler",
+          "excerpt": "Son yarışma zaferimizi ve bunu mümkün kılan takım çalışmasını yansıtıyoruz...",
+          "date": "2024-01-10"
+        },
+        {
+          "title": "Drone Teknolojisinin Geleceği",
+          "excerpt": "UAV geliştirmesindeki gelişen trendleri ve bunların ekibimiz için ne anlama geldiğini keşfediyoruz...",
+          "date": "2024-01-05"
+        }
+      ]
     }
   },
   "gallery": {
@@ -106,7 +189,26 @@
       "title": "Takımımıza Katılmak İster misiniz?",
       "description": "İTÜ öğrencisiyseniz ve havacılık teknolojileriyle ilgileniyorsanız, aramıza katılabilirsiniz. Her dönem yeni üye alımları yapıyoruz.",
       "button": "Başvuru İçin İletişime Geçin"
-    }
+    },
+    "sections": {
+      "mechanical": "Mekanik Takımı",
+      "software": "Yazılım Takımı",
+      "avionics": "Aviyonik Takımı",
+      "promotion": "Tanıtım & Sponsorluk Takımı"
+    },
+    "roles": {
+      "captain": "Takım Kaptanı",
+      "softwareLeader": "Yazılım Takım Lideri",
+      "mechanicalLeader": "Mekanik Takım Lideri",
+      "avionicLeader": "Aviyonik Takım Lideri",
+      "promotionLeader": "Tanıtım & Sponsorluk Takım Lideri",
+      "mechanicalMember": "Mekanik Takım Üyesi",
+      "softwareMember": "Yazılım Takım Üyesi",
+      "avionicsMember": "Aviyonik Takım Üyesi",
+      "promotionMember": "Tanıtım & Sponsorluk Takım Üyesi",
+      "advisor": "Akademik Danışman"
+    },
+    "advisorDepartment": "Uçak ve Uzay Bilimleri Fakültesi"
   },
   "achievements": {
     "title": "BAŞARILARIMIZ",
@@ -344,5 +446,15 @@
     "learnMore": "Daha Fazla Bilgi",
     "viewAll": "Tümünü Görüntüle",
     "close": "Kapat"
+  },
+  "pageTitles": {
+    "home": "Ana Sayfa - ITUNOM UAV",
+    "vehicles": "Araçlar - ITUNOM UAV",
+    "team": "Takım - ITUNOM UAV",
+    "achievements": "Başarılar - ITUNOM UAV",
+    "blog": "Blog - ITUNOM UAV",
+    "contact": "İletişim - ITUNOM UAV",
+    "sponsor": "Sponsorlar - ITUNOM UAV",
+    "join": "Bize Katılın - ITUNOM UAV"
   }
 }

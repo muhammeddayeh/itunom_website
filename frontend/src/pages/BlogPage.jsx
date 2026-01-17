@@ -2,6 +2,8 @@ import React from 'react';
 import { Calendar, User, ArrowRight, Tag } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
+import PageTitle from '../components/PageTitle';
+
 
 const BlogPage = () => {
   const { t } = useTranslation();
@@ -57,7 +59,7 @@ const BlogPage = () => {
       excerpt: 'blog.excerpts.e5',
       date: '03/2024',
       author: 'blog.authors.a1',
-      category: 'Manufacturing',
+      category: t('blog.categories.manufacturing'),
       image: '/photos/blog/saustest1.png',
       link: "https://www.instagram.com/p/DKpcrLVq_a5/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
       
@@ -65,19 +67,12 @@ const BlogPage = () => {
   ];
 
   const categories = [
-    t('blog.categories.all'),
-    t('blog.categories.vehicleDevelopment'),
-    t('blog.categories.autonomousSystems'),
-    t('blog.categories.artificialIntelligence'),
-    t('blog.categories.competitions'),
-    t('blog.categories.manufacturing'),
-    t('blog.categories.workshop'),
-    t('blog.categories.electronics'),
-    t('blog.categories.navigation')
   ];
 
   return (
     <div className="min-h-screen bg-black pt-16">
+            <PageTitle titleKey="pageTitles.blog" />
+
       {/* Hero Section */}
       <section className="relative py-20 px-4 bg-gradient-to-b from-black via-gray-900 to-black">
         <div className="max-w-6xl mx-auto text-center">
@@ -128,7 +123,7 @@ const BlogPage = () => {
                     {post.category}
                   </div>
                 </div>
-                <Link to={`/blog/${post.id}`} className="flex items-center space-x-1 text-red-500 hover:text-red-400 transition-colors font-semibold">
+                <Link   to={`${post.link}`} target="_blank" rel="noopener noreferrer" className="flex items-center space-x-1 text-red-500 hover:text-red-400 transition-colors font-semibold"> {/* to={`/blog/${post.id}`} */}
                 <div className="p-6">
                   <div className="flex items-center space-x-4 text-sm text-gray-400 mb-3">
                     <span className="flex items-center space-x-1">

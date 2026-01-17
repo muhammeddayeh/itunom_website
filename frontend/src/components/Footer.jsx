@@ -79,10 +79,10 @@ const Footer = () => {
             <div>
               <h4 className="text-white font-semibold mb-2">{t('footer.email')}</h4>
               <a 
-                href="mailto:itunomuavteam@itu.edu.tr" 
+                href="mailto:itunomuavteam@gmail.com" 
                 className="text-gray-400 hover:text-red-500 transition-colors"
               >
-                itunomuavteam@itu.edu.tr
+                itunomuavteam@gmail.com
               </a>
             </div>
             <div>

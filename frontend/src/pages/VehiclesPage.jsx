@@ -2,6 +2,8 @@ import React from 'react';
 import { ArrowRight, Cpu, Radio, Camera, Battery, Ruler, Weight } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
+import PageTitle from '../components/PageTitle';
+
 
 const VehiclesPage = () => {
   const { t } = useTranslation();
@@ -92,6 +94,8 @@ const VehiclesPage = () => {
 
   return (
     <div className="min-h-screen bg-black pt-16">
+            <PageTitle titleKey="pageTitles.vehicles" />
+
       {/* Hero Section */}
       <section className="relative py-20 px-4 bg-gradient-to-b from-black via-gray-900 to-black">
         <div className="max-w-6xl mx-auto text-center">

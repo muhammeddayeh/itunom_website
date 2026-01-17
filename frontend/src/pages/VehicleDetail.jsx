@@ -2,6 +2,8 @@ import React from 'react';
 import { useParams, Link, Navigate } from 'react-router-dom';
 import { ArrowLeft, Cpu, Radio, Camera, Battery, Ruler, Weight, Calendar, Trophy } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
+import PageTitle from '../components/PageTitle';
+
 
 const VehicleDetail = () => {
   const { vehicleName } = useParams();
@@ -129,6 +131,8 @@ const VehicleDetail = () => {
 
   return (
     <div className="min-h-screen bg-black pt-16">
+            <PageTitle titleKey="pageTitles.vehicles" />
+
       {/* Hero Section */}
       <section className="relative py-12 px-4 bg-gradient-to-b from-black via-gray-900 to-black">
         <div className="max-w-7xl mx-auto">

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Mail, Phone, MapPin, Send, Linkedin, Instagram, Youtube, Github } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
+import PageTitle from '../components/PageTitle';
 
 const ContactPage = () => {
   const { t } = useTranslation();
@@ -14,7 +15,7 @@ const ContactPage = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     // TODO: Add form submission when backend integration is ready
-    const mailtoLink = `mailto:itunomuavteam@itu.edu.tr?subject=${encodeURIComponent(formData.subject)}&body=${encodeURIComponent(`Name: ${formData.name}\nEmail: ${formData.email}\n\nMessage:\n${formData.message}`)}`;
+    const mailtoLink = `mailto:itunomuavteam@gmail.com?subject=${encodeURIComponent(formData.subject)}&body=${encodeURIComponent(`Name: ${formData.name}\nEmail: ${formData.email}\n\nMessage:\n${formData.message}`)}`;
     window.location.href = mailtoLink;
   };
 
@@ -27,6 +28,8 @@ const ContactPage = () => {
 
   return (
     <div className="min-h-screen bg-black pt-16">
+            <PageTitle titleKey="pageTitles.contact" />
+
       {/* Hero Section */}
       <section className="relative py-20 px-4 bg-gradient-to-b from-black via-gray-900 to-black">
         <div className="max-w-6xl mx-auto text-center">
@@ -61,10 +64,10 @@ const ContactPage = () => {
                   <div>
                     <h3 className="text-white font-semibold mb-1">{t('contact.email')}</h3>
                     <a 
-                      href="mailto:itunomuavteam@itu.edu.tr" 
+                      href="mailto:itunomuavteam@gmail.com" 
                       className="text-gray-300 hover:text-red-500 transition-colors"
                     >
-                      itunomuavteam@itu.edu.tr
+                      itunomuavteam@gmail.com
                     </a>
                   </div>
                 </div>

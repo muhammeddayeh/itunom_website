@@ -1,6 +1,8 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { Users, Rocket, Brain, Code, Wrench, Send } from 'lucide-react';
+import PageTitle from '../components/PageTitle';
+
 
 const JoinUsPage = () => {
   const { t } = useTranslation();
@@ -35,6 +37,8 @@ const JoinUsPage = () => {
 
   return (
     <div className="min-h-screen bg-black pt-16">
+            <PageTitle titleKey="pageTitles.join" />
+
       {/* Hero Section */}
       <section className="relative py-20 px-4 bg-gradient-to-b from-black via-gray-900 to-black">
         <div className="max-w-6xl mx-auto text-center">
